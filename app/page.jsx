@@ -13,7 +13,6 @@ export default function Home() {
       try {
         const data = await roupas();
         setApiData(data);
-        console.log(data);
       } catch (error) {
         console.log(error);
       }
@@ -24,22 +23,30 @@ export default function Home() {
   const filteredData = apiData.filter(item => item.type.value == 'outfit' && item.name !== 'TBD' && item.name !== 'null');
 
 
+
   console.log(filteredData);
+
+  const formattedData = (date) => {
+    const format = date.slice(0, 10);
+    return format.split('-').reverse().join('/');
+  }
   return (
     <div>
       {
+
+        // quando fazer o carregar é aqui que voce vai mexer blz?
+
+
         filteredData.map((item, index) => {
           if (index < 1725) {
             return (
               <div key={index}>
-                <p>{index}</p>
                 <h1>{item.name}</h1>
                 <img src={item.images.icon} width={256} height={256} />
+                <p>{item.rarity.displayValue}</p>
+                <p>{formattedData(item.added)}</p>
               </div>
             );
-          } else {
-            console.log('erro');
-            return null; // ou outro elemento que você queira renderizar
           }
         })
       }
