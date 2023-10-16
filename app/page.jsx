@@ -56,7 +56,7 @@ export default function Home() {
 
 
         filteredData.map((item, index) => {
-          if (index < 1725) {
+          if (index < 1699) {
             return (
               <div key={index}>
                 <h1>{item.name}</h1>
