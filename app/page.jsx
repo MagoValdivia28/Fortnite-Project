@@ -23,6 +23,7 @@ export default function Home() {
 
   const filteredData = apiData.filter(item => item.type.value === 'outfit');
 
+  console.log(filteredData);
   return (
     <div>
       {
