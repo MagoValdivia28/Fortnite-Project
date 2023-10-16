@@ -23,7 +23,13 @@ export default function Home() {
 
   return (
     <div>
-      <p>daiub</p>
+      {
+        apiData.map((item) => (
+            <div>
+              <h1>{item.type.value}</h1>
+            </div>
+        ))
+      }
     </div>
   )
 }
