@@ -1,7 +1,7 @@
 const Pessoa = ({ imagem, nome, cargo, descricao }) => {
     return(
     <div>
-        <img src={imagem}/>
+        <img src={imagem} height={200} width={250}/>
         <h2>{nome}</h2>
         <h3>{cargo}</h3>
         <p>{descricao}</p>
