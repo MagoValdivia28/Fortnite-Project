@@ -1,11 +1,11 @@
 "use client"
 import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
-import { Hearts } from 'react-loader-spinner';
+import { ProgressBar } from 'react-loader-spinner';
 
 export default function Home() {
   const [apiData, setApiData] = useState([]);
-  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -17,16 +17,16 @@ export default function Home() {
     }
     fetchData();
   }, []);
-  
+
   const filteredData = apiData.filter(item => item.type.value === 'outfit' && item.name !== 'TBD' && item.name !== 'null' && item.introduction !== null);
-  
+
   console.log(filteredData);
-  
+
   const formattedData = (date) => {
     const format = date.slice(0, 10);
     return format.split('-').reverse().join('/');
   }
-  
+
   const price = (item) => {
     if (item.rarity.displayValue === 'Legendary') {
       return "2000 v-bucks"; // Substitua essa string pelo ícone apropriado
@@ -44,19 +44,19 @@ export default function Home() {
       return "1500 v-bucks"; // Substitua essa string pelo ícone apropriado
     }
   }
-  
+
   return (
     <div>
       {apiData.length == 0 ? (
         <div>
-          <Hearts 
-            height={80}
-            width={80}
-            color="#4fa94d"
-            ariaLabel='hearts-loading'
-            wrapperStyle={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-            wrapperClass=''
-            visible={true}
+          <ProgressBar
+            height="80"
+            width="80"
+            ariaLabel="progress-bar-loading"
+            wrapperStyle={{}}
+            wrapperClass="progress-bar-wrapper"
+            borderColor='#F4442E'
+            barColor='#51E5FF'
           />
         </div>
       ) : (
