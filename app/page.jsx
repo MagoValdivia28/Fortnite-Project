@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 export default function Home() {
-  const [apiData, setApiData] = useState('');
+  const [apiData, setApiData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <div>
       {
-        apiData.map((item) => (
+        apiData.map(item => (
             <div>
               <h1>{item.type.value}</h1>
             </div>
