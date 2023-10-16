@@ -1,0 +1,46 @@
+.main{
+    background-color: rgb(28, 128, 164);
+    height: 6rem;
+    display: flex;
+
+}
+
+.btn{
+    background-color:rgb(118,181,197);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    
+    margin-right: 38rem;
+    padding: 1rem;
+
+
+}
+
+.btn:hover{
+    background-color: rgb(234,182,118);
+    cursor: pointer;        
+}
+
+.item{
+    text-decoration: none;
+    color: white;	
+    font-size: 1.2rem;
+    margin-left: 6%;
+    margin-right: 3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 8rem;
+    background-color:  rgb(234,182,118);
+    border-radius: 0.2rem;
+    padding: 1rem;
+
+}
+.itens{
+    display: flex;
+}
+.item1{
+    text-decoration: none;
+    color: white;	
+    font-size: 1.35rem;
+    text-align: center;   
+}
