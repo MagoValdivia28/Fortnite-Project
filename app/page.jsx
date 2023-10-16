@@ -21,10 +21,12 @@ export default function Home() {
     fetchData();
   }, []);
 
+  const filteredData = apiData.filter(item => item.type.value === 'outfit');
+
   return (
     <div>
       {
-        apiData.map(item => (
+        filteredData.map(item => (
             <div>
               <h1>{item.type.value}</h1>
             </div>
