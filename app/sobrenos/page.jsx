@@ -9,9 +9,7 @@ const Sobrenos = () => (
         <div className={styles.card1}>
             <Image src={"/enigma.jpg"} width={256} height={200} />
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore adipisci delectus blanditiis porro ducimus? Sequi ut quis voluptatibus aliquam, doloribus libero, rerum natus laudantium quas eaque vitae expedita quisquam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore adipisci delectus blanditiis porro ducimus? Sequi ut quis voluptatibus aliquam, doloribus libero, rerum natus laudantium quas eaque vitae expedita quisquam.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, labore adipisci delectus blanditiis porro ducimus? Sequi ut quis voluptatibus aliquam, doloribus libero, rerum natus laudantium quas eaque vitae expedita quisquam.
+                Em um mundo repleto de desafios e mistérios a serem desvendados, a equipe "ENIGMA" se destaca como um grupo unido e comprometido em superar obstáculos e desvendar os segredos do amanhã. Sob a liderança inspirada de Felipe Pedro, e com a participação ativa dos membros Pedro Isac, Guilherme Rocha, Thayna Vazzoler, Matheus Coco e Matheus Gomes, essa equipe é a personificação da colaboração, inovação e determinação.
             </p>
         </div>
         <div className={styles.container}>
