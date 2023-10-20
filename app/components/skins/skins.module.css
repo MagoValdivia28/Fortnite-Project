@@ -30,4 +30,12 @@
     padding: 10px;
 }
 
+.card:hover {
+    .vbucks{
+        background-color: yellow;
+        color: #000;
+    }
+    transition: 0.2s;
+    border: yellow 2.4px solid;
+}
 
