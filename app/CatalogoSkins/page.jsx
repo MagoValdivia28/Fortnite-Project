@@ -3,9 +3,7 @@ import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
 import Header from '../components/header/header';
-
-import Image from 'next/image';
-
+import Price from '../components/price/Price';
 import styles from './catalogoSkins.module.css';
 
 
@@ -24,46 +22,9 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const filteredData = apiData.filter(item => item.type.value === 'outfit' && item.name !== 'TBD' && item.name !== 'null' && item.introduction !== null);
-
-  console.log(filteredData);
-
   const formattedData = (date) => {
     const format = date.slice(0, 10);
     return format.split('-').reverse().join('/');
-  }
-
-  const price = (item) => {
-    if (item.rarity.displayValue === 'Legendary') {
-      return <div className={styles.vbucksCard}>
-        <p>2000</p>
-        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
-      </div>; // Substitua essa string pelo ícone apropriado
-    }
-    else if (item.rarity.displayValue === 'Rare') {
-      return <div className={styles.vbucksCard}>
-        <p>1200</p>
-        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
-      </div>;
-    }
-    else if (item.rarity.displayValue === 'Uncommon') {
-      return <div className={styles.vbucksCard}>
-        <p>800</p>
-        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
-      </div>;
-    }
-    else if (item.rarity.displayValue === 'Common') {
-      return <div className={styles.vbucksCard}>
-        <p>500</p>
-        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
-      </div>;
-    }
-    else {
-      return <div className={styles.vbucksCard}>
-        <p>1500</p>
-        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
-      </div>;
-    }
   }
 
   return (
@@ -83,7 +44,7 @@ export default function Home() {
             />
           </div>
         ) : (
-          filteredData.map((item, index) => {
+          apiData.map((item, index) => {
             if (index < 1699) {
               return (
                 <div className={styles.card} key={index}>
@@ -92,7 +53,7 @@ export default function Home() {
                     <h1>{item.name}</h1>
                     <p>{item.type.displayValue}</p>
                     <div className={styles.vbucks}>
-                      <p>{price(item)}</p>
+                      <Price item={item} />
                     </div>
                   </div>
                 </div>

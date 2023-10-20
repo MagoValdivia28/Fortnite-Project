@@ -38,13 +38,3 @@
     background-color: #000;
     padding: 10px;
 }
-
-.vbucksCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vbucksCard img {
-    margin-left: 3px;
-}

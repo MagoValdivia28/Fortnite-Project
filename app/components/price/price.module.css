@@ -1,0 +1,9 @@
+.vbucksCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vbucksCard img {
+    margin-left: 3px;
+}
