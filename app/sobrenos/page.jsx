@@ -2,6 +2,7 @@ import styles from "./sobrenos.module.css"
 import Pessoa from "../components/pessoa/page";
 import Image from "next/image";
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 const Sobrenos = () => (
 
     
@@ -23,7 +24,9 @@ const Sobrenos = () => (
         </div>
         <div className={styles.container}>
         </div>
+        <Footer/>
     </div>
+   
 );
 
 
