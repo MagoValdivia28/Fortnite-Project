@@ -48,3 +48,13 @@
 .vbucksCard img {
     margin-left: 3px;
 }
+
+.card:hover {
+    .vbucks {
+        background-color: yellow;
+        color: #000;
+    }
+    transition: 0.4s;
+    border: yellow 2.4px solid; ;
+
+}
