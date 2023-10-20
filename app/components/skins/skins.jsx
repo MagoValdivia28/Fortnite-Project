@@ -1,4 +1,5 @@
 import styles from "./skins.module.css"
+import Price from '../price/Price';
 
 const Skins = ({h1, key, src, p, p1}) => {
     return(
@@ -8,7 +9,7 @@ const Skins = ({h1, key, src, p, p1}) => {
       <h1>{h1}</h1>
       <p>{p}</p>
       <div className={styles.vbucks}>
-        <p>{p1}</p>
+        <Price item={p1}/>
       </div>
     </div>
   </div>

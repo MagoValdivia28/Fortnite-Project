@@ -48,7 +48,7 @@ export default function Home() {
           apiData.map((item, index) => {
             if (index < 1699) {
               return (
-                <Skins item={item} src={item.images.icon} p={item.type.displayValue} key={index} h1={item.name} />
+                <Skins item={item} src={item.images.icon} p={item.type.displayValue} p1={item} key={index} h1={item.name} />
               );
             }
           })
