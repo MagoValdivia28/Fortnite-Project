@@ -1,6 +1,7 @@
 import styles from "./sobrenos.module.css"
 import Pessoa from "../components/pessoa/page";
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 const Sobrenos = () => (
     <div className={styles.main}>
         <Header />
@@ -23,7 +24,9 @@ const Sobrenos = () => (
             <Pessoa imagem={""} nome={"Thayna Vazzoler"} cargo={"Desenvolvedor"} descricao={"Gosto muito de musica"} />
             <Pessoa imagem={""} nome={"Felipe Pedro"} cargo={"Desenvolvedor"} descricao={"Gosto muito de musica"} />
         </div>
+        <Footer/>
     </div>
+   
 );
 
 

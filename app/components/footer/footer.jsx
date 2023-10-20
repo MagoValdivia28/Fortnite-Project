@@ -7,6 +7,7 @@ const Footer = () => (
     </div>
 
     <div className={styles.footer_redesocial}>
+        <a href="#">instagram</a>
 
     </div>
 
