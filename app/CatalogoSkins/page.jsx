@@ -47,6 +47,7 @@ export default function Home() {
 
   return (
     <div>
+      <Header />
       {apiData.length == 0 ? (
         <div>
           <ProgressBar
@@ -57,7 +58,7 @@ export default function Home() {
             wrapperClass="progress-bar-wrapper"
             borderColor='#F4442E'
             barColor='#51E5FF'
-          /> 
+          />
         </div>
       ) : (
         filteredData.map((item, index) => {
