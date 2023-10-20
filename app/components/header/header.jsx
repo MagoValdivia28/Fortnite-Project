@@ -1,18 +1,42 @@
 import styles from './header.module.css';
 import Link from 'next/link';
-const Header = () => (
-    <div className={styles.main}>
-        <div className={styles.btn}>
-            <Link className={styles.item1} href="/">Cadastre uma nova skin! </Link>
-        </div>
+import { AiFillHome } from "react-icons/ai";
+import { IoIosPeople } from "react-icons/io";
+import { RiTShirtFill } from "react-icons/ri";
+import { FaMap } from "react-icons/fa";
+import {BsFillPersonPlusFill} from "react-icons/bs";
 
-        <div className={styles.itens}>
-            <Link className={styles.item} href="/">home</Link>
-            <Link className={styles.item} href="/">skins</Link>
-            <Link className={styles.item} href="/">Maps</Link>
-            <Link className={styles.item} href="/sobrenos">equipe</Link>
-        </div>
-    </div>
+
+
+
+const Header = () => (
+    <header className={styles.headerContainer}>
+        <nav className={styles.nav}>
+            <Link className={styles.titile} href="/">
+                <h2 className={styles.icon}><BsFillPersonPlusFill /></h2>
+                <h1 className={styles.textIcon}>Crie sua Skin !!!</h1>
+            </Link>
+            <ul className={styles.list}>
+                <li>
+              
+                    <Link className={styles.item} href="/"><p><AiFillHome /> Home</p></Link>
+                </li>
+                <li>
+
+                    <Link className={styles.item} href="/"> <p><RiTShirtFill /> Skins</p></Link>
+                </li>
+                <li>
+
+                    <Link className={styles.item} href="/"><p><FaMap /> Mapas</p></Link>
+                </li>
+                <li>
+
+                    <Link className={styles.item} href="/sobrenos"><p><IoIosPeople /> Equipe</p></Link>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
 )
 
 export default Header;
