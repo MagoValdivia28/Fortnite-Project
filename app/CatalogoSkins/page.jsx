@@ -3,7 +3,11 @@ import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
 import Header from '../components/header/header';
+
+import Image from 'next/image';
+
 import styles from './catalogoSkins.module.css';
+
 
 export default function Home() {
   const [apiData, setApiData] = useState([]);
@@ -31,19 +35,34 @@ export default function Home() {
 
   const price = (item) => {
     if (item.rarity.displayValue === 'Legendary') {
-      return "2000 v-bucks"; // Substitua essa string pelo ícone apropriado
+      return <div className={styles.vbucksCard}>
+        <p>2000</p>
+        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      </div>; // Substitua essa string pelo ícone apropriado
     }
     else if (item.rarity.displayValue === 'Rare') {
-      return "1200 v-bucks"; // Substitua essa string pelo ícone apropriado
+      return <div className={styles.vbucksCard}>
+        <p>1200</p>
+        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      </div>;
     }
     else if (item.rarity.displayValue === 'Uncommon') {
-      return "800 v-bucks"; // Substitua essa string pelo ícone apropriado
+      return <div className={styles.vbucksCard}>
+        <p>800</p>
+        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      </div>;
     }
     else if (item.rarity.displayValue === 'Common') {
-      return "500 v-bucks"; // Substitua essa string pelo ícone apropriado
+      return <div className={styles.vbucksCard}>
+        <p>500</p>
+        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      </div>;
     }
     else {
-      return "1500 v-bucks"; // Substitua essa string pelo ícone apropriado
+      return <div className={styles.vbucksCard}>
+        <p>1500</p>
+        <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      </div>;
     }
   }
 
