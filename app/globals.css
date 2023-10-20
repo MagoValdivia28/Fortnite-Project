@@ -2,5 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Teste;
 
 }
+@font-face {
+    font-family: 'Teste';
+    src: local('Teste'), url(../fonts/Burbank\ Big\ Regular\ Black.otf) format('truetype');
+  }
