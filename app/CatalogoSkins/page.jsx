@@ -3,7 +3,7 @@ import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
 import Header from '../components/header/header';
-
+import Skins from '../components/skins/skins';
 import Image from 'next/image';
 
 import styles from './catalogoSkins.module.css';
@@ -86,16 +86,7 @@ export default function Home() {
           filteredData.map((item, index) => {
             if (index < 1699) {
               return (
-                <div className={styles.card} key={index}>
-                  <img src={item.images.icon} width={300} height={300} alt={item.name} />
-                  <div className={styles.cardDescription}>
-                    <h1>{item.name}</h1>
-                    <p>{item.type.displayValue}</p>
-                    <div className={styles.vbucks}>
-                      <p>{price(item)}</p>
-                    </div>
-                  </div>
-                </div>
+               <Skins item={item} index={index} src={item.images.icon} p={item.type.displayValue} p1={price(item)} key={index} h1={item.name}/>
               );
             }
           })

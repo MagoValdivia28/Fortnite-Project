@@ -8,36 +8,9 @@
     gap: 10px;
 }
 
-.card {
-    background: radial-gradient(farthest-side at 10% 10%, rgb(49, 160, 204) 0%, rgb(51, 181, 229) 100%);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgb(18, 133, 179);
-    gap: 10px;
-    padding: 2px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    text-align: center;
-}
 
-.card {
-    position: relative;
-}
 
-.cardDescription {
-    position: absolute;
-    background-color: #00000043;
-    color: #fff;
-    bottom: 0;
-    width: 100%;
-}
 
-.vbucks {
-    background-color: #000;
-    padding: 10px;
-}
 
 .vbucksCard{
     display: flex;
