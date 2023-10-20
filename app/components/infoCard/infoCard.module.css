@@ -1,0 +1,44 @@
+.cardContainer {
+    width: 479px;
+    height: 428px;
+    color: white;
+}
+
+.headerContainer {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(217, 125, 50) 0%, rgb(168, 95, 36) 100%);
+    padding: 10px;
+
+}
+
+.mainContainer {
+    width: 100%;
+    background-color: rgb(115, 154, 250);
+    padding: 10px;
+
+}
+
+.endContainer {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.endContainer button {
+    margin: 3px 3px;
+    color: black;
+    padding: 3px 15px;
+    font-weight: bold;
+    background-color: rgb(232, 232, 72);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price img {
+    margin-right: 3px;
+}
