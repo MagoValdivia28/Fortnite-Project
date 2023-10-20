@@ -5,6 +5,8 @@ import Image from 'next/image';
 const calculatePreco = (rarity) => {
   if (rarity === 'Legendary') {
     return 2000;
+  } else if (rarity === 'Epic') {
+    return 1500;
   } else if (rarity === 'Rare') {
     return 1200;
   } else if (rarity === 'Uncommon') {
@@ -16,11 +18,12 @@ const calculatePreco = (rarity) => {
   }
 };
 
-const Price = ({item}) => {
+
+const Price = ({ item }) => {
   const preco = calculatePreco(item.rarity.displayValue);
 
   return (
-    <div className={styles.vbucksCard}>
+    <div onLoad={arrumarOrdem()} className={styles.vbucksCard}>
       <p>{preco}</p>
       <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
     </div>

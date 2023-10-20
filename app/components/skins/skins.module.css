@@ -1,5 +1,4 @@
 .card {
-    background: radial-gradient(farthest-side at 10% 10%, rgb(49, 160, 204) 0%, rgb(51, 181, 229) 100%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -31,11 +30,33 @@
 }
 
 .card:hover {
-    .vbucks{
+    .vbucks {
         background-color: yellow;
         color: #000;
     }
+
     transition: 0.2s;
     border: yellow 2.4px solid;
 }
 
+.Legendary {
+    background: radial-gradient(farthest-side at 10% 10%, rgb(184, 95, 51) 0%, rgb(189, 110, 45) 100%);
+}
+
+.Epic {
+    background: -webkit-linear-gradient(left, rgb(138, 71, 209) 0%, rgb(132, 45, 173) 100%);
+}
+
+.Rare {
+    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+}
+
+
+.Uncommon {
+    background: -webkit-linear-gradient(left, rgb(89, 209, 73) 0%, rgb(77, 153, 37) 100%);
+}
+
+.Common {
+    background: radial-gradient(farthest-side at 10% 10%, rgb(141, 123, 114) 0%, rgb(141, 123, 114) 100%);
+
+}
