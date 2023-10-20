@@ -10,6 +10,7 @@ import Image from 'next/image';
 
 export default function Home() {
   const [apiData, setApiData] = useState([]);
+  const [click, setClick] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
