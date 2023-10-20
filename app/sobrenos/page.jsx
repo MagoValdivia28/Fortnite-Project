@@ -1,11 +1,8 @@
 import styles from "./sobrenos.module.css"
 import Pessoa from "../components/pessoa/page";
-import Header from "../components/header/header";
 import Image from "next/image";
 const Sobrenos = () => (
     <div className={styles.main}>
-        <Header />
-
         <div className={styles.card1}>
             <Image src={"/enigma.jpg"} width={256} height={200} />
             <p>
