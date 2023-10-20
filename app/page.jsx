@@ -1,4 +1,5 @@
 import Header from "./components/header/header"
+import InfoCard from "./components/infoCard/InfoCard"
 
 const Home = () => {
   return (
