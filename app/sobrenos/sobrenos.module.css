@@ -4,8 +4,6 @@
 .container{
     display: flex;
 }
-<<<<<<< HEAD
-=======
 .cardPessoa{
     display: flex;
     flex-direction: column;
@@ -13,5 +11,4 @@
     margin: 0 10px;
     background-color: black;
     color: white;
-};
->>>>>>> 887f53e917e090e5ee4d6d1b2917b37007a893d1
+}
