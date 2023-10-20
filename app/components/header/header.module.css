@@ -67,8 +67,12 @@
 }
 
 
-.titile h2 {
-    .titile h1 {
-        display: none;
+.textIcon {
+    display: none;
+}
+
+.titile:hover {
+    .textIcon {
+        display: block;
     }
 }
