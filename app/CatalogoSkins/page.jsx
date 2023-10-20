@@ -3,6 +3,7 @@ import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
 import Header from '../components/header/header';
+import styles from './catalogoSkins.module.css';
 
 export default function Home() {
   const [apiData, setApiData] = useState([]);
@@ -47,36 +48,41 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <>
       <Header />
-      {apiData.length == 0 ? (
-        <div>
-          <ProgressBar
-            height="80"
-            width="80"
-            ariaLabel="progress-bar-loading"
-            wrapperStyle={{}}
-            wrapperClass="progress-bar-wrapper"
-            borderColor='#F4442E'
-            barColor='#51E5FF'
-          />
-        </div>
-      ) : (
-        filteredData.map((item, index) => {
-          if (index < 1699) {
-            return (
-              <div key={index}>
-                <h1>{item.name}</h1>
-                <img src={item.images.icon} width={256} height={256} alt={item.name} />
-                <p>{item.rarity.displayValue}</p>
-                <p>{item.introduction.text}</p>
-                <p>{formattedData(item.added)}</p>
-                <p>{price(item)}</p>
-              </div>
-            );
-          }
-        })
-      )}
-    </div>
+      <div className={styles.containerSkin}>
+        {apiData.length == 0 ? (
+          <div>
+            <ProgressBar
+              height="80"
+              width="80"
+              ariaLabel="progress-bar-loading"
+              wrapperStyle={{}}
+              wrapperClass="progress-bar-wrapper"
+              borderColor='#F4442E'
+              barColor='#51E5FF'
+            />
+          </div>
+        ) : (
+          filteredData.map((item, index) => {
+            if (index < 1699) {
+              return (
+                <div className={styles.card} key={index}>
+                  <img src={item.images.icon} width={300} height={300} alt={item.name} />
+                  <div className={styles.cardDescription}>
+                    <h1>{item.name}</h1>
+                    <p>{item.type.displayValue}</p>
+                    <div className={styles.vbucks}>
+                      <p>{price(item)}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+          })
+        )}
+      </div>
+    </>
+
   )
 }
