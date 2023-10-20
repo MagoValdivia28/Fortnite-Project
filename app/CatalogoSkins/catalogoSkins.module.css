@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 40px;
     padding: 10px;
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
     gap: 10px;
@@ -38,4 +37,14 @@
 .vbucks {
     background-color: #000;
     padding: 10px;
+}
+
+.vbucksCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vbucksCard img {
+    margin-left: 3px;
 }
