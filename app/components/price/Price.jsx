@@ -19,6 +19,8 @@ const calculatePreco = (rarity) => {
 };
 
 
+
+
 const Price = ({ item }) => {
   const preco = calculatePreco(item.rarity.displayValue);
 
