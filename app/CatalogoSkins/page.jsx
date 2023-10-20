@@ -2,6 +2,7 @@
 import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
+import Header from '../components/header/header';
 
 export default function Home() {
   const [apiData, setApiData] = useState([]);
