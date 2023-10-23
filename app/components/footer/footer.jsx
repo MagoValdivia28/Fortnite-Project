@@ -7,8 +7,8 @@ const Footer = () => (
     <div>
     <div className={styles.Article}>
         <div className={styles.link}>
-          <a href="#">< AiFillInstagram /> </a>
-          <a href="#"><AiFillGithub /></a>
+          <a href="https://www.instagram.com/">< AiFillInstagram /> </a>
+          <a href="https://github.com/MagoValdivia28?tab=repositories"><AiFillGithub /></a>
         </div>
 
         <div className={styles.copy}>
