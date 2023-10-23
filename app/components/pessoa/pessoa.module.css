@@ -10,7 +10,6 @@
     padding: 2px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     text-align: center;
-    font-size: 10px;
 }
 
 .card {
@@ -31,10 +30,11 @@
     padding: 10px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.card:hover {
+    .vbucks{
+        background-color: yellow;
+        color: #000;
+    }
+    transition: 0.2s;
+    border: yellow 2.4px solid;
 }
