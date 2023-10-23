@@ -52,6 +52,7 @@ export default function Home() {
               return (
                 <Skins item={item} src={item.images.icon} p={item.type.displayValue} p1={item} key={index} h1={item.name} />
               );
+
             }
           })
         )}
