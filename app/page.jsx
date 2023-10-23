@@ -1,3 +1,4 @@
+import Footer from "./components/footer/footer"
 import Header from "./components/header/header"
 import InfoCard from "./components/infoCard/InfoCard"
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Header />
       Home</div>
+      
   )
 }
 
