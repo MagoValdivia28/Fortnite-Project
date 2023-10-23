@@ -25,7 +25,7 @@ const Price = ({ item }) => {
   const preco = calculatePreco(item.rarity.displayValue);
 
   return (
-    <div onLoad={arrumarOrdem()} className={styles.vbucksCard}>
+    <div className={styles.vbucksCard}>
       <p>{preco}</p>
       <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
     </div>
