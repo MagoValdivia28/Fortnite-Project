@@ -3,6 +3,7 @@ import roupas from 'data/roupas';
 import { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-loader-spinner';
 import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
 import Price from '../components/price/Price';
 import styles from './catalogoSkins.module.css';
 import Skins from '../components/skins/skins';
@@ -55,6 +56,7 @@ export default function Home() {
           })
         )}
       </div>
+      <Footer/>
     </>
 
   )
