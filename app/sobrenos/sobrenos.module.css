@@ -1,15 +1,16 @@
-.main{
+.main {
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
     align-items: center;
     text-align: center;
 }
-.card1{
+
+.card1 {
     text-align: center;
     margin: 0 auto;
     color: white;
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -19,7 +20,8 @@
 
 
 }
-.container1{
+
+.container1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -27,6 +29,17 @@
     padding: 10px;
     gap: 10px;
 }
-.container2{
+
+.container2 {
     display: flex;
+}
+
+.imgLogo{
+    border: 2px solid #0b54f4;
+    margin: 5px;
+}
+
+.imgEquipe{
+    border: 2px solid #0b54f4;
+    margin: 5px;
 }
