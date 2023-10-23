@@ -1,4 +1,5 @@
 import styles from "./pessoa.module.css";
+
 const Pessoa = ({ imagem, nome, cargo, descricao }) => {
   return (
     <div className={styles.card}>
@@ -11,7 +12,6 @@ const Pessoa = ({ imagem, nome, cargo, descricao }) => {
         </div>
       </div>
     </div>
-
   )
 };
 
