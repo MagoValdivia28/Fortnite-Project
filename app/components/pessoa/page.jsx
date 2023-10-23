@@ -12,4 +12,4 @@ const Pessoa = ({ imagem, nome, cargo, descricao, cor }) => {
     )
 };
 
-export default Pessoa;
+export default Pessoa;  

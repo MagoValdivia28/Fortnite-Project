@@ -27,7 +27,7 @@ const Header = () => (
                 </li>
                 <li>
 
-                    <Link className={styles.item} href="/"><p><FaMap /> Mapas</p></Link>
+                    <Link className={styles.item} href="/mapas"><p><FaMap /> Mapas</p></Link>
                 </li>
                 <li>
 
