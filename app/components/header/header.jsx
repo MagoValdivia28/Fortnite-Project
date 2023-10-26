@@ -23,7 +23,7 @@ const Header = () => (
                 </li>
                 <li>
 
-                    <Link className={styles.item} href="/CatalogoSkins"> <p><RiTShirtFill /> Skins</p></Link>
+                    <Link className={styles.item} href="/CatalogSkins"> <p><RiTShirtFill /> Skins</p></Link>
                 </li>
                 <li>
 

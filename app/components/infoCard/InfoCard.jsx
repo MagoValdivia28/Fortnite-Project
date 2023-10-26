@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from './infoCard.module.css'
 
 const InfoCard = ({ nome, raridade, descricao, imagem, vbucks }) => {
@@ -17,7 +17,7 @@ const InfoCard = ({ nome, raridade, descricao, imagem, vbucks }) => {
             </div>
             <div className={styles.endContainer}>
                 <div className={styles.price}>
-                    <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+                    {/* <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} /> */}
                     <p>{vbucks}</p>
                 </div>
                 <button>Editar</button>

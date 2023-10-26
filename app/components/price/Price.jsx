@@ -1,8 +1,8 @@
 import styles from './price.module.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 
-const calculatePreco = (rarity) => {
+const calcPrice = (rarity) => {
   if (rarity === 'Legendary') {
     return 2000;
   } else if (rarity === 'Epic') {
@@ -18,16 +18,11 @@ const calculatePreco = (rarity) => {
   }
 };
 
-
-
-
-const Price = ({ item }) => {
-  const preco = calculatePreco(item.rarity.displayValue);
-
+const Price = ({ rarity }) => {
   return (
     <div className={styles.vbucksCard}>
-      <p>{preco}</p>
-      <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      <p>{calcPrice(rarity)}</p>
+      {/* <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} /> */}
     </div>
   );
 };

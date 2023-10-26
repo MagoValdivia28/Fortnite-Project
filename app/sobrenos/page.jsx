@@ -1,6 +1,6 @@
 import styles from "./sobrenos.module.css"
 import Pessoa from "../components/pessoa/page";
-import Image from "next/image";
+// import Image from "next/image";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 const Sobrenos = () => (
@@ -9,7 +9,7 @@ const Sobrenos = () => (
     <div className={styles.main}>
         <Header />
         <div className={styles.card1}>
-            <Image src={"/enigma.jpg"} width={256} height={200} />
+            {/* <Image src={"/enigma.jpg"} width={256} height={200} /> */}
             <p>
                 Em um mundo repleto de desafios e mistérios a serem desvendados, a equipe "ENIGMA" se destaca como um grupo unido e comprometido em superar obstáculos e desvendar os segredos do amanhã. Sob a liderança inspirada de Felipe Pedro, e com a participação ativa dos membros Pedro Isac, Guilherme Rocha, Thayna Vazzoler, Matheus Coco e Matheus Gomes, essa equipe é a personificação da colaboração, inovação e determinação.
             </p>
