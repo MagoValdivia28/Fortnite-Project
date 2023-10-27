@@ -1,4 +1,4 @@
-import styes from './page.module.css';
+import styles from './page.module.css';
 
 const Mapinfo = ({imagem, nome, descrição, cor})  => {
     return (
