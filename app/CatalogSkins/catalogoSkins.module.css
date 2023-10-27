@@ -32,11 +32,11 @@
         background-color: yellow;
         color: #000;
     }
-
+    
     transition: 0.4s;
     border: yellow 2.4px solid;
     ;
-
+    
 }
 
 .cardBnt {
@@ -75,7 +75,7 @@
     align-items: flex-start;
     justify-content: center;
     margin: 2.5rem 0;
-
+    
 }
 .skinpronta{
     align-items: center;
