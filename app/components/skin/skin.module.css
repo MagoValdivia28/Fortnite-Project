@@ -39,73 +39,24 @@
     border: yellow 2.4px solid;
 }
 
-.legendary {
+.Legendary {
     background: radial-gradient(farthest-side at 10% 10%, rgb(184, 95, 51) 0%, rgb(189, 110, 45) 100%);
 }
 
-.epic {
+.Epic {
     background: -webkit-linear-gradient(left, rgb(138, 71, 209) 0%, rgb(132, 45, 173) 100%);
 }
 
-.rare {
+.Rare {
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
 }
 
 
-.uncommon {
+.Uncommon {
     background: -webkit-linear-gradient(left, rgb(89, 209, 73) 0%, rgb(77, 153, 37) 100%);
 }
 
-.common {
+.Common {
     background: radial-gradient(farthest-side at 10% 10%, rgb(141, 123, 114) 0%, rgb(141, 123, 114) 100%);
-}
 
-.marvel {
-    background-image: url('https://media.fortniteapi.io/images/textures/Marvel.png');
-    background-size: cover;
-}
-
-.gaminglegends {
-    background-image: url('https://i.redd.it/bnyvu0910l561.jpg');
-    background-size: cover;
-}
-
-.starwars {
-    background-image: url('https://i.pinimg.com/originals/d7/a6/11/d7a61190a836bdcfc62bf97af4f4c74b.png');
-    background-size: cover;
-}
-
-.icon {
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/e/eb/Icon_Series_Rarity_Locker_Texture.png');
-    background-size: cover;
-}
-
-.dark {
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/0/0a/Dark_Series_Rarity_Locker_Texture.png');
-    background-size: cover;
-}
-
-.lava {
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/7/7a/Lava_Series_Rarity_Locker_Texture.png');
-    background-size: cover;
-}
-
-.shadow {
-    background: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/6/6c/Shadow_Series_Rarity_Locker_Texture.png');
-    background-size: cover;
-}
-
-.dc {
-    background: url('https://media.fortniteapi.io/images/textures/DC.png');
-    background-size: cover;
-}
-
-.slurp {
-    background: url('https://static.wikia.nocookie.net/fortnite/images/c/cf/Slurp_Series_-_Rarity_-_Fortnite.png');
-    background-size: cover;
-}
-
-.frozen {
-    background: url('https://static.wikia.nocookie.net/fortnite/images/9/9f/Frozen_Series_-_Rarity_-_Fortnite.png');
-    background-size: cover;
 }
