@@ -17,6 +17,7 @@ function CatalogSkins() {
   const [vbucks, setVbucks] = useState(null);
   const [exibirPopUp, setExibirPopUp] = useState(false);
   const [tipoPopUp, setTipoPopUp] = useState(null);
+  const [on, setOn] = useState(true);
 
 
   // const formattedData = (date) => {
@@ -31,9 +32,12 @@ function CatalogSkins() {
   function handlePopUp(tipo) {
     setExibirPopUp(true);
     setTipoPopUp(tipo);
+    setOn(false);
+
   }
   function exit() {
     setExibirPopUp(false);
+    setOn(true);
   }
 
   const handleSkin = (name, rarity, description, image, vbucks) => {
@@ -61,7 +65,13 @@ function CatalogSkins() {
   return (
     <div className={styles.main}>
       <Header />
-      <button className={styles.bnt} onClick={() => handlePopUp("Deu tudo certo", "success")}>Crie sua própria skin!!!</button>
+    {
+      on == true ? (
+        <div className={styles.cardBnt}>
+        <button className={styles.bnt} onClick={() => handlePopUp("Deu tudo certo", "success")}>Crie sua própria skin!!!</button>
+      </div>
+      ) : null
+    }
       {
         exibirPopUp && <div className={styles.cardCreator}>
           <PopUpCadastro type={tipoPopUp} func={exibirPopUp} />
@@ -70,6 +80,7 @@ function CatalogSkins() {
         </div>
 
       }
+      {/* <h1 className={styles.skinpronta}>skins prontas!</h1> */}
       {
         apiData ? (
           <div className={styles.containerSkin}>

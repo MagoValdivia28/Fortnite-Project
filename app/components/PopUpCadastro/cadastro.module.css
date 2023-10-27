@@ -4,43 +4,51 @@
     margin-right: 0.4rem;
     /* border: #000 2px solid; */
     padding: 3rem;
-    background-color: #0145a7;
+    background: rgb(51,51,187);
+    background: linear-gradient(90deg, rgba(51,51,187,1) 31%, rgba(63,63,220,1) 62%, rgba(37,37,226,1) 77%);
 }
 .card input {
     margin: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.7rem;
     border: none;
     width: 30rem;
     outline: none;
-    background-color: #0044cb;
+    background-color: #0044cb;  
     color: #99ddff;
     border: 0.3rem solid #0062e5;
+    font-size: 25px;
 }
 
 .card select {
     margin: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.7rem;
     border: none;
     outline: none;
     background-color: #0044cb;
     color: #99ddff;
     border: 0.3rem solid #0062e5;
+    font-size: 25px;
 }
+
 
 .bntCriar {
     background-color: yellow;
     color: #000;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.7rem;
     font-size: 1.2rem;
     border: none;
     margin-top: 0.5rem;
-    width: 30%;
+    width: 40%;
     align-items: center;
     margin: auto;
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 .title {
     color: #31a6fd;
+}
+
+.card input::placeholder {
+    color: #99ddff;
 }

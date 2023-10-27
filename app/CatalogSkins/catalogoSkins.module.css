@@ -39,13 +39,24 @@
 
 }
 
+.cardBnt {
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
 .bnt {
     background-color: yellow;
     color: #000;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.7rem;
     font-size: 1.2rem;
     border: none;
+    margin-top: 0.5rem;
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
 }
 .bntExit {
     background-color: red;
@@ -55,11 +66,18 @@
     font-size: 1.2rem;
     /* border-radius: 50%; */
     border: none;
+    position: relative;
+    right: 2.39%;
 }
 
 .cardCreator {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin: 2.5rem 0;
 
+}
+.skinpronta{
+    align-items: center;
+    text-align: center;
 }
