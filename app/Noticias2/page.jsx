@@ -1,6 +1,22 @@
+import Footer from '../components/footer/footer'
 import styles from './page.module.css'
+import Image from 'next/image'
 
+const Noticia2 = () => {
+    return (
+        <>
+        <div className={styles.main}>
+            <img className={styles.img2}  src="	https://cdn2.unrealengine.com/discord-gfx-blogheader-1900x600-89c1c2c109a8.jpg"/>
 
-const Noticia2 {
+            <div>
+                <h1> 2</h1>
+            </div>
+           
+            <p>Noticia  2</p>
+            
+        </div>
+        <Footer/>
+        </>
+    )
 
 }
