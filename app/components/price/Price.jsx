@@ -22,7 +22,7 @@ const Price = ({ rarity }) => {
   return (
     <div className={styles.vbucksCard}>
       <p>{calcPrice(rarity)}</p>
-      <img src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} />
+      {/* <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} /> */}
     </div>
   );
 };
