@@ -28,6 +28,7 @@
 
 .vbucks {
     background-color: #000;
+    height: 40px;
     padding: 10px;
     border-left: 2px solid rgb(18, 133, 179);
     border-right: 2px solid rgb(18, 133, 179);
