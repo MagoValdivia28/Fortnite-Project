@@ -6,6 +6,57 @@
     width: 100%;
     height: 100%;
     z-index: 999;
+    backdrop-filter: blur(5px);
+    
+}
+
+.containerInfoImage {
+    display: flex;
+}
+
+.description {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainContainer p {
+    font-size: 23px;
+}
+
+.description p {
+    font-size: 23px;
+}
+
+.description span {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+
+.avatar {
+    margin-top: 3px;
+    width: 166.5px;
+    height: 253.5px;
+    border-color: rgb(166, 82, 40);
+}
+
+.avatar img {
+    object-fit: cover;
+    padding: 10px;
+}
+
+.x {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    position: absolute;
+    right: -40px;
 }
 
 .cardContainer {
@@ -13,23 +64,30 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 479px;
-    height: 428px;
+    width: 879px;
+    height: auto;
     color: white;
+    position: relative;
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .headerContainer {
     width: 100%;
-    background: linear-gradient(45deg, rgb(217, 125, 50) 0%, rgb(168, 95, 36) 100%);
     padding: 10px;
+}
 
+.raridade {
+    mix-blend-mode:overlay;
+    color: #ffffff;
+    margin-bottom: 3px;
 }
 
 .mainContainer {
     width: 100%;
-    background-color: rgb(115, 154, 250);
+    background-color: rgba(255, 255, 255, 0.265) ;
     padding: 10px;
-
 }
 
 .endContainer {
@@ -44,6 +102,7 @@
     color: black;
     padding: 3px 15px;
     font-weight: bold;
+    font-size: 20px;
     background-color: rgb(232, 232, 72);
 }
 
@@ -55,4 +114,85 @@
 
 .price img {
     margin-right: 3px;
+}
+
+.legendary {
+    background: radial-gradient(farthest-side at 10% 10%, rgb(184, 95, 51) 0%, rgb(189, 110, 45) 100%);
+    border: 2px solid (166, 82, 40);
+}
+
+.epic {
+    background: -webkit-linear-gradient(left, rgb(138, 71, 209) 0%, rgb(132, 45, 173) 100%);
+    border: 2px solid rgb(132, 45, 173);
+}
+
+.rare {
+    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+    border: 2px solid rgb(62, 106, 201);
+}
+
+.uncommon {
+    background: -webkit-linear-gradient(left, rgb(89, 209, 73) 0%, rgb(77, 153, 37) 100%);
+    border: 2px solid rgb(77, 153, 37);
+}
+
+.common {
+    background: radial-gradient(farthest-side at 10% 10%, rgb(141, 123, 114) 0%, rgb(141, 123, 114) 100%);
+    border: 2px solid rgb(141, 123, 114);
+}
+
+.marvel {
+    background-image: url('https://media.fortniteapi.io/images/textures/Marvel.png');
+    background-size: cover;
+    border: 2px solid rgb(151, 35, 35);
+
+}
+
+.gaminglegends {
+    background-image: url('https://i.redd.it/bnyvu0910l561.jpg');
+    background-size: cover;
+    border: 2px solid rgb(132, 45, 173);
+}
+
+.starwars {
+    background-image: url('https://i.pinimg.com/originals/d7/a6/11/d7a61190a836bdcfc62bf97af4f4c74b.png');
+    background-size: cover;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.icon {
+    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/e/eb/Icon_Series_Rarity_Locker_Texture.png');
+    background-size: cover;
+    border: 2px solid rgb(45, 173, 158);
+}
+
+.dark {
+    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/0/0a/Dark_Series_Rarity_Locker_Texture.png');
+    background-size: cover;
+}
+
+.lava {
+    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/7/7a/Lava_Series_Rarity_Locker_Texture.png');
+    background-size: cover;
+}
+
+.shadow {
+    background: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/6/6c/Shadow_Series_Rarity_Locker_Texture.png');
+    background-size: cover;
+}
+
+.dc {
+    background: url('https://media.fortniteapi.io/images/textures/DC.png');
+    background-size: cover;
+    border: 2px solid rgb(28, 84, 121);
+}
+
+.slurp {
+    background: url('https://static.wikia.nocookie.net/fortnite/images/c/cf/Slurp_Series_-_Rarity_-_Fortnite.png');
+    background-size: cover;
+}
+
+.frozen {
+    background: url('https://static.wikia.nocookie.net/fortnite/images/9/9f/Frozen_Series_-_Rarity_-_Fortnite.png');
+    background-size: cover;
 }
