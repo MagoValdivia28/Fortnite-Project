@@ -1,3 +1,25 @@
 .img2 {
    width: 100%;
 }
+
+.cont {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 1rem; 
+   margin: 40px;
+}
+
+.notice {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 1rem;  
+   margin: 50px;
+}
+
+.spann {
+   margin: 10px;
+}
