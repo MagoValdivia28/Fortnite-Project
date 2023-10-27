@@ -15,19 +15,21 @@ function CatalogSkins() {
   const [description, setDescription] = useState(null);
   const [image, setImage] = useState(null);
   const [vbucks, setVbucks] = useState(null);
+
+  const [introduction, setIntroducion] = useState(null);
+  const [dateAdded, setDateAdded] = useState(null);
+
   const [exibirPopUp, setExibirPopUp] = useState(false);
   const [tipoPopUp, setTipoPopUp] = useState(null);
   const [on, setOn] = useState(true);
 
 
-  // const formattedData = (date) => {
-  //   const format = date.slice(0, 10);
-  //   return format.split('-').reverse().join('/');
-  // }
+  
 
-  // const handleSkin = (name) => {
-  //   alert(name);
-  // }
+  const formattedData = (date) => {
+    const format = date.slice(0, 10);
+    return format.split('-').reverse().join('/');
+  }
 
   function handlePopUp(tipo) {
     setExibirPopUp(true);
@@ -41,12 +43,23 @@ function CatalogSkins() {
   }
 
   const handleSkin = (name, rarity, description, image, vbucks) => {
+
     setName(name);
     setRarity(rarity);
     setDescription(description);
     setImage(image);
     setVbucks(vbucks);
+    setIntroducion(introduction);
+    setDateAdded(formattedData(dateAdded))
     console.log(name, rarity, description, image, vbucks);
+  }
+
+  const handleClose = () => {
+    setName(null)
+    setRarity(null);
+    setDescription(null);
+    setImage(null);
+    setVbucks(null);
   }
 
   useEffect(() => {
@@ -86,7 +99,7 @@ function CatalogSkins() {
           <div className={styles.containerSkin}>
             {
               name !== null ? (
-                <InfoCard nome={name} raridade={rarity} descricao={description} imagem={image} vbucks={vbucks} />
+                <InfoCard nome={name} raridade={rarity} descricao={description} imagem={image} vbucks={vbucks} introduction={introduction} added={dateAdded} close={handleClose} />
               ) : null
             }
             {
