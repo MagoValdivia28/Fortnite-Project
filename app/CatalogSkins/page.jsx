@@ -31,10 +31,6 @@ function CatalogSkins() {
     return format.split('-').reverse().join('/');
   }
 
-
-
-  const handleSkin = (name, rarity, description, image, introduction, dateAdded ,vbucks) => {
-
   function handlePopUp(tipo) {
     setExibirPopUp(true);
     setTipoPopUp(tipo);
