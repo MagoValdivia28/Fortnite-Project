@@ -6,6 +6,7 @@ import Footer from '../components/footer/footer';
 import styles from './catalogoSkins.module.css';
 import Skin from '../components/skin/Skin';
 import InfoCard from '../components/infoCard/InfoCard';
+import PopUpCadastro from '../components/PopUpCadastro/cadastro';
 
 function CatalogSkins() {
   const [apiData, setApiData] = useState(null);
@@ -14,6 +15,10 @@ function CatalogSkins() {
   const [description, setDescription] = useState(null);
   const [image, setImage] = useState(null);
   const [vbucks, setVbucks] = useState(null);
+  const [exibirPopUp, setExibirPopUp] = useState(false);
+  const [tipoPopUp, setTipoPopUp] = useState(null);
+  const [on, setOn] = useState(true);
+
 
   // const formattedData = (date) => {
   //   const format = date.slice(0, 10);
@@ -23,6 +28,17 @@ function CatalogSkins() {
   // const handleSkin = (name) => {
   //   alert(name);
   // }
+
+  function handlePopUp(tipo) {
+    setExibirPopUp(true);
+    setTipoPopUp(tipo);
+    setOn(false);
+
+  }
+  function exit() {
+    setExibirPopUp(false);
+    setOn(true);
+  }
 
   const handleSkin = (name, rarity, description, image, vbucks) => {
     setName(name);
@@ -47,8 +63,24 @@ function CatalogSkins() {
   }, []);
 
   return (
-    <>
+    <div className={styles.main}>
       <Header />
+    {
+      on == true ? (
+        <div className={styles.cardBnt}>
+        <button className={styles.bnt} onClick={() => handlePopUp("Deu tudo certo", "success")}>Crie sua própria skin!!!</button>
+      </div>
+      ) : null
+    }
+      {
+        exibirPopUp && <div className={styles.cardCreator}>
+          <PopUpCadastro type={tipoPopUp} func={exibirPopUp} />
+          <button className={styles.bntExit} onClick={() => exit()}>X</button>
+
+        </div>
+
+      }
+      {/* <h1 className={styles.skinpronta}>skins prontas!</h1> */}
       {
         apiData ? (
           <div className={styles.containerSkin}>
@@ -69,7 +101,7 @@ function CatalogSkins() {
         )
       }
       <Footer />
-    </>
+    </div>
 
   )
 }
