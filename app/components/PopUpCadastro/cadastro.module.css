@@ -2,24 +2,29 @@
     display: flex;
     flex-direction: column;
     margin-right: 0.4rem;
-    border: #000 2px solid;
+    /* border: #000 2px solid; */
     padding: 3rem;
+    background-color: #0145a7;
 }
 .card input {
     margin: 0.3rem;
     padding: 0.3rem;
     border: none;
     width: 30rem;
-    border-radius: 0.3rem;
     outline: none;
+    background-color: #0044cb;
+    color: #99ddff;
+    border: 0.3rem solid #0062e5;
 }
 
 .card select {
     margin: 0.3rem;
     padding: 0.3rem;
     border: none;
-    border-radius: 0.3rem;
     outline: none;
+    background-color: #0044cb;
+    color: #99ddff;
+    border: 0.3rem solid #0062e5;
 }
 
 .bntCriar {
@@ -34,4 +39,8 @@
     align-items: center;
     margin: auto;
     margin-top: 2rem
+}
+
+.title {
+    color: #31a6fd;
 }

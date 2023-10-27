@@ -13,7 +13,7 @@ const PopUpCadastro = ({ type, func }) => {
     };
     return (
         <div className={styles.card}>
-            <h1>Cadatro</h1>
+            <h1 className={styles.title}>Cadastro</h1>
             <input
                 type="text"
                 name="nome"
