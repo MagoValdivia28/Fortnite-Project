@@ -11,7 +11,6 @@ const InfoCard = ({ nome, raridade, descricao, imagem, vbucks }) => {
             <div className={styles.mainContainer}>
                 <p>{descricao}</p>
                 <div className={styles.avatar}>
-                    <p>{descricao}</p>
                     <img src={imagem} width={111} height={169} alt={nome} />
                 </div>
             </div>
