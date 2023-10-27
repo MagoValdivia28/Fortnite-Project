@@ -4,25 +4,25 @@ import Footer from "../components/footer/footer";
 const Pessoa = () => {
     return (
 
-        <div>
+        <div className={styles.main}>
                     <Header/>
                   
                     <div className={styles.tudo} >
-        <div>
+        <div className={styles.div1}>
             <h1 className={styles.h1}>REGRAS PARA CRIADORES DE ILHAS DO FORTNITE</h1>
-            <p>16.10.2023</p>
-            <p>Equipe Fortnite</p>
-<p>Última Atualização: 16 de outubro de 2023</p>
+            <p className={styles.p1}>16.10.2023</p>
+            <p className={styles.p2}>Equipe Fortnite</p>
+<p className={styles.p2}>Última Atualização: 16 de outubro de 2023</p>
  </div>
 
  <div>
-    <h3>ATUALIZAÇÃO (16 de outubro de 2023)</h3>
-    <p>Fizemos diversas atualizações de políticas. As principais mudanças foram:</p>
-<p>
+    <h3 className={styles.p3}>ATUALIZAÇÃO (16 de outubro de 2023)</h3>
+    <p className={styles.p1}>Fizemos diversas atualizações de políticas. As principais mudanças foram:</p>
+<p className={styles.p3}>
 Atualizamos a regra 1.15 (de acordo com a classificação etária de Fortnite): as imagens e textos usados para divulgar a sua experiência devem ser apropriados para o público geral (p. ex.: conteúdo que entraria na classificação ESRB 10+ ou menos). As imagens aprovadas anteriormente precisam seguir esta atualização.
 Adicionamos a regra 1.18 (Apresentação do Conteúdo da Ilha)
 </p>
-<p>Tire um tempo para ler as regras atualizadas e se familiarizar com elas.</p>
+<p className={styles.p3}>Tire um tempo para ler as regras atualizadas e se familiarizar com elas.</p>
 </div>
 
 <div>
@@ -90,9 +90,19 @@ Adicionamos a regra 1.18 (Apresentação do Conteúdo da Ilha)
 <p><h4>1.17 Exceções Educativas —</h4> Reservamo-nos o direito de permitir exceções às nossas Regras para Criadores de Ilhas se o propósito principal da sua Ilha for educativo, científico, artístico ou histórico.
 </p>
 <p><h4>1.18 Apresentação do Conteúdo da Ilha —</h4> Ao enviar seu questionário para Classificação Etária para a IARC, você deve revelar com precisão o conteúdo relevante presente na sua Ilha para receber classificações etárias apropriadas. Respostas imprecisas podem resultar na rejeição do seu conteúdo, enquanto violações contínuas podem incorrer em outras ações, entre as quais a suspensão ou revogação permanente em potencial dos seus privilégios de monetização e publicação.</p>
+</div>
 
+<div>
 <h3>2. TRABALHANDO EM EQUIPE</h3>
 <p>2.1. Caso você recrute outro(a) criador(a) de Ilhas para ajudar a construir a sua experiência ou aceite ajudar na experiência de outro(a) criador(a) de Ilhas, o acordo será válido somente entre vocês. A Epic Games não tem participação no acordo nem responsabilidade por nenhum aspecto dele.</p>
+<p>2.2. Caso você tenha interesse em usar um vídeo personalizado na sua Ilha, e queira saber como fazer isso, entre em contato conosco usando o Formulário de Suporte aos Criadores para descobrir como ter acesso antecipado a essa funcionalidade.
+</p>
+<p>2.3 O Unreal Editor para Fortnite permite que criadores adultos trabalhem juntos em equipes, que são gerenciadas pelo Portal de Criadores do Fortnite. Você é responsável por garantir que o conteúdo criado e publicado por equipes que sejam suas siga as regras aqui expressas. Todo conteúdo da sua equipe é de sua responsabilidade, ainda que o conteúdo irregular tenha sido feito ou importado por outro membro da equipe.</p>
+</div>
+
+<div>
+<h3>3. DIVULGANDO SUA ILHA</h3>
+
 </div>
 
 
