@@ -42,7 +42,7 @@ function CatalogSkins() {
     setOn(true);
   }
 
-  const handleSkin = (name, rarity, description, image, vbucks) => {
+  const handleSkin = (name, rarity, description, image, introduction, dateAdded ,vbucks) => {
 
     setName(name);
     setRarity(rarity);
