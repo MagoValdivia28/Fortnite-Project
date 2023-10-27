@@ -1,3 +1,7 @@
+.main {
+    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+}
+
 .containerSkin {
     display: flex;
     flex-wrap: wrap;
@@ -7,11 +11,13 @@
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
     gap: 10px;
 }
+
 .vbucks {
     background-color: #000;
     padding: 10px;
 }
-.vbucksCard{
+
+.vbucksCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +32,34 @@
         background-color: yellow;
         color: #000;
     }
+
     transition: 0.4s;
-    border: yellow 2.4px solid; ;
+    border: yellow 2.4px solid;
+    ;
+
+}
+
+.bnt {
+    background-color: yellow;
+    color: #000;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+}
+.bntExit {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    /* border-radius: 50%; */
+    border: none;
+}
+
+.cardCreator {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
 }
