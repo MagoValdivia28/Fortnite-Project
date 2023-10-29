@@ -79,7 +79,6 @@
 }
 
 .raridade {
-    mix-blend-mode:overlay;
     color: #ffffff;
     margin-bottom: 3px;
 }
@@ -118,7 +117,7 @@
 
 .legendary {
     background: radial-gradient(farthest-side at 10% 10%, rgb(184, 95, 51) 0%, rgb(189, 110, 45) 100%);
-    border: 2px solid (166, 82, 40);
+    border: 2px solid rgb(166, 82, 40);
 }
 
 .epic {
@@ -167,8 +166,9 @@
 }
 
 .dark {
+    border: 2px solid rgb(132, 45, 173);
+    background-size: contain;
     background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/0/0a/Dark_Series_Rarity_Locker_Texture.png');
-    background-size: cover;
 }
 
 .lava {
