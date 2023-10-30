@@ -111,3 +111,9 @@
    text-transform: uppercase;
    font-family: OpenSans,sans-serif!important;
 }
+
+.lii {
+   font-size: 1em;
+   line-height: 2.5;
+   font-family: OpenSans, sans-serif;
+}
