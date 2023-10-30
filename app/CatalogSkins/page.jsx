@@ -8,6 +8,7 @@ import Skin from '../components/skin/Skin';
 import InfoCard from '../components/infoCard/InfoCard';
 import PopUpCadastro from '../components/PopUpCadastro/cadastro';
 import { PuffLoader } from 'react-spinners';
+import Roupas from '../../models/roupas';
 
 function CatalogSkins() {
   const [apiData, setApiData] = useState(null);
@@ -16,35 +17,29 @@ function CatalogSkins() {
   const [description, setDescription] = useState(null);
   const [image, setImage] = useState(null);
   const [vbucks, setVbucks] = useState(null);
-
   const [introduction, setIntroducion] = useState(null);
   const [dateAdded, setDateAdded] = useState(null);
-
   const [exibirPopUp, setExibirPopUp] = useState(false);
   const [tipoPopUp, setTipoPopUp] = useState(null);
   const [on, setOn] = useState(true);
 
-
-
-
+  const listaRoupas = new Roupas();
   const formattedData = (date) => {
     const format = date.slice(0, 10);
     return format.split('-').reverse().join('/');
   }
-
   function handlePopUp(tipo) {
     setExibirPopUp(true);
     setTipoPopUp(tipo);
     setOn(false);
-
   }
+
   function exit() {
     setExibirPopUp(false);
     setOn(true);
   }
 
   const handleSkin = (name, rarity, description, image, introduction, dateAdded, vbucks) => {
-
     setName(name);
     setRarity(rarity);
     setDescription(description);
@@ -63,18 +58,36 @@ function CatalogSkins() {
     setVbucks(null);
   }
 
+  const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada) => {
+    listaRoupas.addRoupa(nome, descricao, rarity, data, capitulo, temporada);
+    console.log(nome, descricao, rarity, data, capitulo, temporada);
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await skins();
         setApiData(data);
-        console.log(data);
       } catch (error) {
         throw error;
       }
     }
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (apiData) {
+      apiData.forEach((skinData) => {
+        listaRoupas.addRoupa(skinData.name, skinData.description, skinData.rarity.value, skinData.added, skinData.introduction.chapter, skinData.introduction.season);
+      });
+      
+      /*       // Atualize o estado com a lista de agentes atualizada
+      const updatedAgentes = [...listaAgentes, ...instanciaLista.getListaAgentes()]; // Combine os dados da API com os existentes
+      setListaAgentes(updatedAgentes); */
+    }
+  }, [apiData]);
+  
+  console.log(listaRoupas.roupas);
 
   return (
     <div className={styles.main}>
@@ -88,7 +101,7 @@ function CatalogSkins() {
       }
       {
         exibirPopUp && <div className={styles.cardCreator}>
-          <PopUpCadastro type={tipoPopUp} func={exibirPopUp} />
+          <PopUpCadastro novosCadastros={handleCadastro} />
           <button className={styles.bntExit} onClick={() => exit()}>X</button>
 
         </div>
@@ -97,6 +110,7 @@ function CatalogSkins() {
       {/* <h1 className={styles.skinpronta}>skins prontas!</h1> */}
       {
         apiData ? (
+
           <div className={styles.containerSkin}>
             {
               name !== null ? (
@@ -104,7 +118,7 @@ function CatalogSkins() {
               ) : null
             }
             {
-              apiData.map((cardSkin) => (
+              listaRoupas.roupas.map((cardSkin) => (
                 <Skin list={cardSkin} func={handleSkin} />
               ))
 

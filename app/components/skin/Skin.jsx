@@ -1,18 +1,18 @@
 import styles from "./skin.module.css"
 import Price from '../price/Price';
 
-const Skin = ({ list, func}) => {
+const Skin = ({ list, func }) => {
   const handleSkin = () => {
-    func(list.name, list.rarity.displayValue, list.description, list.images.icon, list.introduction.text, list.added ,list.rarity.value );
+    func(list.nome, list.raridade, list.descricao, list.imagem, list.capitulo, list.dataLancamento, list.raridade);
   }
   return (
-    <div onClick={handleSkin} className={styles[list.rarity.value] + ' ' + styles.card} key={list.id}>
-      <img src={list.images.icon} width={300} height={300} alt={list.name} />
+    <div onClick={handleSkin} className={styles[list.raridade] + ' ' + styles.card} key={list.id}>
+      <img src={list.imagem} width={300} height={300} alt={list.name} />
       <div className={styles.cardDescription}>
-        <h1>{list.name}</h1>
-        <p>{list.type.displayValue}</p>
+        <h1>{list.nome}</h1>
+        <p>{list.descricao}</p>
         <div className={styles.vbucks}>
-          <Price rarity={list.rarity.displayValue} />
+          <Price rarity={list.raridade} />
         </div>
       </div>
     </div>

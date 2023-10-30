@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
 import styles from './cadastro.module.css';
-import ListaRoupas from "../../../models/roupas";
 
-const listaRoupas = new ListaRoupas();
 
-const PopUpCadastro = ({ type, func }) => {
+const PopUpCadastro = ({novosCadastros}) => {
     const [nome, setNome] = useState(null);
     const [descricao, setDescricao] = useState(null);
     const [rarity, setRarity] = useState('Common');
@@ -13,8 +11,7 @@ const PopUpCadastro = ({ type, func }) => {
     const [temporada, setTemporada] = useState('temporada1');
 
     const addSkin = () => {
-        listaRoupas.addRoupa(nome, descricao, rarity, data, capitulo, temporada);
-        console.log(listaRoupas.roupas);
+        novosCadastros(nome, descricao, rarity, data, capitulo, temporada);
     }
 
     return (
