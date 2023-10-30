@@ -1,37 +1,64 @@
 .main{
-    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+  color: black;
 }
+
+.tudo{
+ margin: 100px 300px;
+
+}
+.h1{
+  font-size: 60px;
+  letter-spacing: -3px;
+
+}
+
+.h2{
+ margin: 50px 0 20px;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.p1{
+  margin: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  font-size: 23px;
+}
+
+.p2{
+  height: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+
+.div1{
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.p3{
+  margin: 50px 0 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+
+.p4{
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+.p5{
+  margin: 30px 60px 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.h3{
   
-  .tudo{
-   margin: 100px 300px;
-
-  }
-  .h1{
-    font-size: 60px;
-    letter-spacing: -3px;
+    margin: 60px 0px 10px;
   
-  }
-  
-  .p1{
-    margin: 20px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 30px;
-    font-size: 23px;
-  }
-
-  .p2{
-    height: 130px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
-  }
 
-  .div1{
-    width: 100%;
-    border-bottom: 1px solid black;
-  }
-
-  .p3{
-    margin: 5px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-  }
+}
