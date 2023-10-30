@@ -1,7 +1,7 @@
 import styles from "./skin.module.css"
 import Price from '../price/Price';
 
-const Skin = ({ list, func }) => {
+const Skin = ({ list, func}) => {
   const handleSkin = () => {
     func(list.name, list.rarity.displayValue, list.description, list.images.icon, list.introduction.text, list.added ,list.rarity.value );
   }
