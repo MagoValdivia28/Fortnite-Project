@@ -12,7 +12,7 @@ import {BsFillPersonPlusFill} from "react-icons/bs";
 const Header = () => (
     <header className={styles.headerContainer}>
         <nav className={styles.nav}>
-            <Link className={styles.titile} href="/CatalogoSkins">
+            <Link className={styles.titile} href="/CatalogSkins">
                 <h2 className={styles.icon}><BsFillPersonPlusFill /></h2>
                 <h1 className={styles.textIcon}>Crie sua Skin !!!</h1>
             </Link>
