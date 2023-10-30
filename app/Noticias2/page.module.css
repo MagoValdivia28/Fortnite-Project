@@ -75,3 +75,26 @@
    line-height: 2;
    list-style-type: inherit;
 }
+
+.tituloHeader {
+   padding-top: 2em;
+   font-size: 1.6em;
+   line-height: 1;
+   margin: 30px;
+   text-transform: uppercase;
+}
+
+.li {
+   font-size: 1em;
+   line-height: 3;
+   list-style-type: inherit;
+   font-family: OpenSans, sans-serif;
+}
+
+.li::before {
+   content: "•";
+   color: black;
+   display: inline-block;
+   width: 1em;
+   margin-left: -0.9em;
+}
