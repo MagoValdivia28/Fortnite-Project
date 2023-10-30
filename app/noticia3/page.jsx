@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer";
 const Pessoa = () => {
     return (
 
-        <div className={styles.main}>
+        <div className={styles.principal}>
             <Header />
             <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-island-creator-rules-1900x600-a829c3da1d8f.jpg" alt="" />
 
