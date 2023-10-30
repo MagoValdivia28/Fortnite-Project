@@ -2,9 +2,9 @@ import styles from "./skin.module.css"
 import Price from '../price/Price';
 
 const Skin = ({ list, func }) => {
-  console.log(list.nome);
+  // console.log(list.nome);
   const handleSkin = () => {
-    func(list.nome, list.raridade, list.descricao, list.imagem, list.capitulo, list.dataLancamento, list.raridade);
+    func(list.nome, list.raridade, list.descricao, list.imagem, list.capitulo, list.temporada, list.dataLancamento, list.raridade);
   }
   return (
     <div onClick={handleSkin} className={styles[list.raridade] + ' ' + styles.card} key={list.id}>

@@ -18,7 +18,8 @@ function CatalogSkins() {
   const [description, setDescription] = useState(null);
   const [image, setImage] = useState(null);
   const [vbucks, setVbucks] = useState(null);
-  const [introduction, setIntroducion] = useState(null);
+  const [chapter, setChapter] = useState(null);
+  const [season, setSeason] = useState(null);
   const [dateAdded, setDateAdded] = useState(null);
   const [exibirPopUp, setExibirPopUp] = useState(false);
   const [tipoPopUp, setTipoPopUp] = useState(null);
@@ -40,15 +41,16 @@ function CatalogSkins() {
     setOn(true);
   }
 
-  const handleSkin = (name, rarity, description, image, introduction, dateAdded, vbucks) => {
+  const handleSkin = (name, rarity, description, image, chapter, season, dateAdded, vbucks) => {
     setName(name);
     setRarity(rarity);
     setDescription(description);
     setImage(image);
     setVbucks(vbucks);
-    setIntroducion(introduction);
+    setChapter(chapter);
+    setSeason(season);
     setDateAdded(formattedData(dateAdded))
-    console.log(name, rarity, description, image, vbucks);
+   console.log(name, rarity, description, chapter, season, image, vbucks);
   }
 
   const handleClose = () => {
@@ -86,9 +88,10 @@ function CatalogSkins() {
       const updatedAgentes = [...listaAgentes, ...instanciaLista.getListaAgentes()]; // Combine os dados da API com os existentes
       setListaAgentes(updatedAgentes); */
       setListaFinal(listaRoupas.getRoupas());
+      console.log(listaRoupas.getRoupas());
     }
   }, [apiData]);
-  console.log(listaRoupas.getRoupas());
+
   
   return (
     <div className={styles.main}>
@@ -115,7 +118,7 @@ function CatalogSkins() {
           <div className={styles.containerSkin}>
             {
               name !== null ? (
-                <InfoCard nome={name} raridade={rarity} descricao={description} imagem={image} vbucks={vbucks} introduction={introduction} added={dateAdded} close={handleClose} />
+                <InfoCard nome={name} raridade={rarity} descricao={description} imagem={image} vbucks={vbucks} chapter={chapter} season={season} added={dateAdded} close={handleClose} />
               ) : null
             }
             {
