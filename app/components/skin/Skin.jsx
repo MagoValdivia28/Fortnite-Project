@@ -2,6 +2,7 @@ import styles from "./skin.module.css"
 import Price from '../price/Price';
 
 const Skin = ({ list, func }) => {
+  console.log(list.nome);
   const handleSkin = () => {
     func(list.nome, list.raridade, list.descricao, list.imagem, list.capitulo, list.dataLancamento, list.raridade);
   }
