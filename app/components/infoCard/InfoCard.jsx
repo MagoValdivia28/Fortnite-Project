@@ -3,6 +3,13 @@ import styles from './infoCard.module.css'
 import Price from '../price/Price'
 
 const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, introduction, added, close }) => {
+    function mesclar(rarity) {
+        if(rarity == 'starwars' || rarity == 'gaminglegends' || rarity == 'shadow' ) {
+            return 'normal'
+        } else {
+            return 'overlay';
+        }
+    }
     return (
         <div className={styles.containerBody}>
             <div className={styles.cardContainer + ' ' + styles[vbucks]}>
@@ -10,7 +17,7 @@ const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, introduction, add
                     <button onClick={close} className={styles.x}>
                         X
                     </button>
-                    <h2 className={styles.raridade}>{raridade} | OUTFIT</h2>
+                    <h2 style={{mixBlendMode:mesclar(vbucks)}} className={styles.raridade}>{raridade} | OUTFIT</h2>
                     <h1>{nome}</h1>
                 </div>
                 <div className={styles.mainContainer}>

@@ -7,6 +7,7 @@ import styles from './catalogoSkins.module.css';
 import Skin from '../components/skin/Skin';
 import InfoCard from '../components/infoCard/InfoCard';
 import PopUpCadastro from '../components/PopUpCadastro/cadastro';
+import { PuffLoader } from 'react-spinners';
 
 function CatalogSkins() {
   const [apiData, setApiData] = useState(null);
@@ -24,7 +25,7 @@ function CatalogSkins() {
   const [on, setOn] = useState(true);
 
 
-  
+
 
   const formattedData = (date) => {
     const format = date.slice(0, 10);
@@ -42,7 +43,7 @@ function CatalogSkins() {
     setOn(true);
   }
 
-  const handleSkin = (name, rarity, description, image, introduction, dateAdded ,vbucks) => {
+  const handleSkin = (name, rarity, description, image, introduction, dateAdded, vbucks) => {
 
     setName(name);
     setRarity(rarity);
@@ -78,13 +79,13 @@ function CatalogSkins() {
   return (
     <div className={styles.main}>
       <Header />
-    {
-      on == true ? (
-        <div className={styles.cardBnt}>
-        <button className={styles.bnt} onClick={() => handlePopUp("Deu tudo certo", "success")}>Crie sua própria skin!!!</button>
-      </div>
-      ) : null
-    }
+      {
+        on == true ? (
+          <div className={styles.cardBnt}>
+            <button className={styles.bnt} onClick={() => handlePopUp("Deu tudo certo", "success")}>Crie sua própria skin!!!</button>
+          </div>
+        ) : null
+      }
       {
         exibirPopUp && <div className={styles.cardCreator}>
           <PopUpCadastro type={tipoPopUp} func={exibirPopUp} />
@@ -110,7 +111,12 @@ function CatalogSkins() {
             }
           </div>
         ) : (
-          <p>aaa</p>
+          <PuffLoader
+            color="yellow"
+            className={styles.loading}
+            speedMultiplier={0.8}
+            size={80}
+          />
         )
       }
       <Footer />
