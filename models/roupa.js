@@ -1,13 +1,13 @@
 export default class Roupa {
-    constructor(nome,descricao, raridade, dataLancamento, capitulo, temporada ) {
+    constructor(nome,descricao, raridade, dataLancamento, capitulo, temporada, imagem ) {
         this.nome = nome;
         this.descricao = descricao;
         this.raridade = raridade;
         this.dataLancamento = dataLancamento;
         this.capitulo = capitulo;
         this.temporada = temporada;
+        this.imagem = imagem;
         this.id = this.generateId();
-        this.imagem = this.generateImage();
     }
 
     generateId() {

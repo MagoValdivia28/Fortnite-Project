@@ -11,7 +11,7 @@ const PopUpCadastro = ({novosCadastros}) => {
     const [temporada, setTemporada] = useState('temporada1');
 
     const addSkin = () => {
-        novosCadastros(nome, descricao, rarity, data, capitulo, temporada);
+        novosCadastros(nome, descricao, rarity, data, capitulo, temporada, 'https://fortniteskins.net/wp-content/cache/thumb/91/9ce682852850991_666x630.webp');
     }
 
     return (

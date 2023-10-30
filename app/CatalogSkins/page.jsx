@@ -79,7 +79,7 @@ function CatalogSkins() {
   useEffect(() => {
     if (apiData) {
       apiData.forEach((skinData) => {
-        listaRoupas.addRoupa(skinData.name, skinData.description, skinData.rarity.value, skinData.added, skinData.introduction.chapter, skinData.introduction.season);
+        listaRoupas.addRoupa(skinData.name, skinData.description, skinData.rarity.value, skinData.added, skinData.introduction.chapter, skinData.introduction.season, skinData.images.icon);
       });
       
       /*       // Atualize o estado com a lista de agentes atualizada

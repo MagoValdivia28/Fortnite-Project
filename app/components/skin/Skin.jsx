@@ -11,7 +11,7 @@ const Skin = ({ list, func }) => {
       <img src={list.imagem} width={300} height={300} alt={list.name} />
       <div className={styles.cardDescription}>
         <h1>{list.nome}</h1>
-        <p>{list.descricao}</p>
+        <p>Outfit</p>
         <div className={styles.vbucks}>
           <Price rarity={list.raridade} />
         </div>
