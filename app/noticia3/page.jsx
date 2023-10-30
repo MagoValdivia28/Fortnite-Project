@@ -142,6 +142,86 @@ Adicionamos a regra 1.18 (Apresentação do Conteúdo da Ilha)
 </p>
 <p className={styles.p3}>Além disso, se os participantes precisarem fornecer alguma informação pessoal ou da conta: "AS INFORMAÇÕES DOS PARTICIPANTES FORNECIDAS LIGADAS À ESTA PROMOÇÃO SÃO ENTREGUES AO PATROCINADOR, NÃO À EPIC GAMES, INC. 
  </p>
+
+<h3 className={styles.h3}>3.5 Comunicação com a Imprensa</h3>
+<p className={styles.p3}>3.5.1. Os materiais criados para comunicados à imprensa e para promover a sua experiência não devem declarar nem insinuar que sua experiência é uma experiência oficial da Epic Games nem que você tem algum tipo de parceria com a Epic Games.</p>
+<p className={styles.p3}>3.5.1. Os materiais criados para comunicados à imprensa e para promover a sua experiência não devem declarar nem insinuar que sua experiência é uma experiência oficial da Epic Games nem que você tem algum tipo de parceria com a Epic Games.</p>
+<p className={styles.p3}>3.5.3. Caso tenha dúvidas em relação à divulgação da sua experiência junto à imprensa ou queira que os materiais que você criar para a imprensa sejam revisados para garantir que estão de acordo com as nossas diretrizes, entre em contato com a Epic Games pelo endereço FNCreativePR@epicgames.com.</p>
+<p className={styles.p3}>3.5.4. Use a linguagem apresentada no exemplo abaixo para descrever o Fortnite nos seus materiais para a imprensa:
+</p>
+<p className={styles.p3}>3.5.4.1. "O Fortnite é desenvolvido pela Epic Games e oferece uma grande variedade de ferramentas para que todos possam desenvolver jogos e experiências."</p>
+<p className={styles.p3}>3.5.4.2. "No Fortnite, qualquer pessoa pode desenvolver sua própria experiência online e compartilhá-la gratuitamente com o público do mundo inteiro do Fortnite."</p>
+
+<h2 className={styles.h3}>4. MONETIZANDO SUA EXPERIÊNCIA</h2>
+<p className={styles.p3}>Queremos facilitar o máximo possível a monetização da sua experiência no Fortnite ao mesmo tempo em que conservamos a transparência para os jogadores. Estas regras apresentam o que você pode e não pode fazer para monetizar sua experiência no Fortnite:</p>
+
+<h3 className={styles.h3}>4.1. Pagamento de Engajamento</h3>
+<p className={styles.p3}>4.1.1. Criadores de Ilhas podem monetizar suas experiências por pagamentos por engajamento, mas precisam preencher os requisitos. Para participar do programa, acesse a a página de inscrição de Criadores de Ilhas.</p>
+<p className={styles.p3}>4.1.2. As Ilhas que usam a Ilha Inicial "Ilha do Battle Royale" não estão disponíveis para pagamentos por engajamento.
+ </p>
+
+<h3 className={styles.h3}>4.2 Programa Apoie-um-Criador</h3>
+<p className={styles.p3}>4.2.1. Caso você crie conteúdos de mídia em outras plataformas que promovam seu conteúdo do Fortnite ou conteúdos do Fortnite criado por outros, você poderá participar do programa Apoie-um-Criador da Epic Games. Para participar do programa, inscreva-se na página do Apoie-um-Criador.</p>
+<p className={styles.p3}>4.2.2. O Apoie-um-Criador é um programa de marketing de afiliados voltado para criadores de mídia ativos. Para aprender mais sobre os requisitos de participação do Apoie-um-Criador, veja a seção de Perguntas Frequentes do Apoie-um-Criador.</p>
+<p className={styles.p3}>4.2.3. Participando do programa Apoie-um-Criador, você poderá divulgar seu Código de Criador em qualquer lugar fora do Fortnite. Caso você também seja um criador de Ilhas, não poderá pedir apoio com seu Código de Criador dentro da sua própria Ilha, incluindo o lobby pré-jogo e os metadados (nome, descrição, miniatura, texto da tela de carregamento nem vídeo do Descobrir). Entendemos que esse era um dos principais métodos de monetização para criadores de Ilhas, mas ele se tornou obsoleto e esses elementos devem ser removidos.</p>
+
+<h3 className={styles.h3}>4.3 Conteúdo Comercial e Patrocínios</h3>
+<p className={styles.p3}>Marcas e criadores são bem-vindos a colaborar no Fortnite, contanto que sigam estas regras e leis aplicáveis. Você não pode pagar à Epic Games para a promoção do seu conteúdo dentro do Fortnite.</p>
+<p className={styles.p3}>4.3.1. Permitimos conteúdo comercial em sua experiência do Fortnite. Conteúdo comercial é definido como qualquer Ilha que contenha conteúdo promovendo ou apoiando uma marca, produto, serviço ou organização.
+</p>
+<p className={styles.p3}>4.3.2. Há duas formas de conteúdo comercial: "Pago", que o criador ou a criadora deve revelar, ou "De posse própria", que não há necessidade de revelação.</p>
+<p className={styles.p5}>Um conteúdo comercial Pago é uma Ilha que contenha, seja na Ilha propriamente dita ou em seus metadados, conteúdo que gere compensação para o criador (p. ex.: algum valor recebido, incluindo dinheiro, bens e/ou serviços) advinda de terceiros. Esse conteúdo pode ter a forma de patrocínio, apoio, aquisição, colocação ou outras ações.</p>
+<p className={styles.p5}>Um conteúdo comercial De Posse Própria é uma Ilha construída ou controlada por uma marca ou outra entidade comercial.</p>
+<p className={styles.p3}>4.3.3. Caso você crie conteúdo Pago, será de sua responsabilidade seguir quaisquer leis aplicáveis que digam respeito à revelação da sua relação com o patrocinador/marca.</p>
+<p className={styles.p3}>4.3.4. Todo criador precisa ter pelo menos 18 anos para criar ou publicar conteúdo comercial Pago.</p>
+<p className={styles.p3}>4.3.5. Seja de conteúdo comercial ou não, os metadados da sua Ilha (nome, descrição, miniatura, texto da tela de carregamento ou vídeo no Descobrir) não podem incluir chamadas para ação, declarações sobre produtos, datas nem preços. Exemplos de coisas proibidas nos metadados da sua Ilha:</p>
+<p className={styles.p5}>1. "Acesse lojaonline.com para saber mais!"</p>
+<p className={styles.p5}>2. "Disponível agora por apenas R$ 9,99!"</p>
+<p className={styles.p5}>3. "Este produto funciona melhor do que nunca!"</p>
+<p className={styles.p5}>4. "Assista ao evento às 21h nesta data neste canal de TV!"</p>
+
+<p className={styles.h3}>4.3.6. O conteúdo comercial e os patrocinadores precisam seguir as regras de conteúdo acima citadas, bem como as Diretrizes de Conteúdo da Epic Games, não podendo:</p>
+<p className={styles.p5}>Promover a compra, venda ou troca de qualquer produto ou serviço médico, farmacêutico ou complementar;</p>
+<p className={styles.p5}>Solicitar doações a organizações políticas nem promover filiação a elas;</p>
+<p className={styles.p5}>Promover o serviço militar;</p>
+<p className={styles.p5}>Promover apostas com dinheiro real;</p>
+<p className={styles.p5}>Promover a compra, venda ou troca de explosivos, armas de fogo ou munição da vida real;</p>
+<p className={styles.p5}>Promover a compra, venda ou troca de tabaco, álcool, maconha (legalizada ou não), drogas ilegais e outros produtos ilegais, contrabandeados ou controlados;</p>
+<p className={styles.p5}>Promover produtos e/ou serviços financeiros enganosos ou danosos;</p>
+<p className={styles.p5}>Promover o namoro, apresentações de ordem romântica ou encontros na vida real.</p>
+
+<p className={styles.p3}>4.3.7. Você pode vender o patrocínio para eventos, torneios e competições presenciais relacionados à sua experiência, contanto que o seu evento esteja de acordo com os Termos de Licença de Eventos Fortnite e com as Regras de Eventos de Terceiros do Fortnite.
+ </p>
+
+<p className={styles.h3}>4.4 Práticas de Monetização a Serem Evitadas</p>
+<p className={styles.p5}>4.4.1. Não restrinja o acesso a conteúdo ou itens específicos dentro de uma experiência por meio de sites externos. Todo o conteúdo deve poder ser acessado dentro do jogo.</p>
+<p className={styles.p5}>4.4.2. Não cobre pelo acesso à sua experiência. O acesso deve ser gratuito para todos os jogadores do Fortnite.
+</p>
+<p className={styles.p5}>4.4.2. Não cobre pelo acesso à sua experiência. O acesso deve ser gratuito para todos os jogadores do Fortnite.
+</p>
+
+<h2 className={styles.h2}>OUTROS TERMOS E CONDIÇÕES</h2>
+<p className={styles.p3}>Todo jogador do Fortnite deve obedecer ao EULA do Fortnite. Caso você use o Unreal Editor para Fortnite, também deverá obedecer aos Termos Suplementares do UEFN; Criadores de Ilha que receberam permissão para publicar conteúdo no Fortnite também devem obedecer aos Termos do Programa de Pagamento por Engajamento. Criadores de conteúdo de mídia que promovem o Fortnite devem obedecer aos Termos e Condições do Apoie-um-Criador.</p>
+
+
+<h2 className={styles.h2}>CONSEQUÊNCIAS</h2>
+<p className={styles.p3}>Ao ficar ciente de uma violação das Regras para Criadores, a Epic tomará medidas com base em cada situação. Levaremos em conta diversos fatores, incluindo a gravidade do problema, infratores reincidentes, entre outros. As medidas tomadas variam: você pode levar uma advertência, perder o direito de aparecer na aba Descobrir ou ficar em destaque, ter a participação nos programas encerrada ou até mesmo ter a conta banida permanentemente por infrações mais graves.</p>
+<p className={styles.p3}>Se a sua conta Epic for banida permanentemente, você perderá todos os direitos a jogos, itens virtuais, saldo na conta e outros itens ganhos ou comprados na Epic.</p>
+
+<h2 className={styles.h2}>DENUNCIAR</h2>
+<p className={styles.p3}>Somos todos parte desta comunidade e depende de nós mantê-la amigável, divertida e livre de negatividade. Se você se deparar com uma pessoa jogadora ou criadora que não esteja respeitando as regras acima, você pode denunciá-la ou denunciar a Ilha.</p>
+<p className={styles.p3}>Se você encontrar alguém com quem não goste de interagir, mas a pessoa não estiver violando as Regras da Comunidade, você pode bloquear a pessoa.</p>
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
