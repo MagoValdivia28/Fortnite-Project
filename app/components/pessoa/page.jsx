@@ -1,7 +1,8 @@
 import styles from "./pessoa.module.css";
 
-const Pessoa = ({ imagem, nome, cargo, descricao }) => {
+const Pessoa = ({ imagem, nome, cargo, descricao, insta }) => {
   return (
+    <a href={insta}>
     <div className={styles.card}>
       <img className={styles.img} src={imagem} width={300} height={300} />
       <div className={styles.cardDescription}>
@@ -12,6 +13,7 @@ const Pessoa = ({ imagem, nome, cargo, descricao }) => {
         </div>
       </div>
     </div>
+    </a>
   )
 };
 

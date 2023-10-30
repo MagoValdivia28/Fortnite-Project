@@ -1,9 +1,9 @@
 .fundo{
-    background-color: #0b54f4;
+    background-color: rgb(65, 167, 235);
 }
 
 .main {
-    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+    background: -webkit-linear-gradient(left, rgb(65, 167, 235) );
     align-items: center;
     text-align: center;
 }
@@ -12,19 +12,23 @@
     text-align: center;
     margin: 0 auto;
     color: white;
-    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+    background-color:    #0050b8;;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     border: 1px solid #0b54f4;
-    transition: all 0.3s ease-in-out;
-    margin-top: 10px;
-
-
+    margin-top: 20px;
+    width: 80%;
 }
+
+.card1 p {
+   font-size: 16px;
+   margin-top: 22px;
+   padding: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .container1 {
     display: flex;
