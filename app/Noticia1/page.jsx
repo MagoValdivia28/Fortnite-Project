@@ -24,16 +24,37 @@ const Noticia1 = () => {
                     <p className={styles.center}>
                         <em className={styles.emm}>O original</em>
                     </p>
+                    <h2 className={styles.tituloNoticia}>CONFIGURAÇÕES RECOMENDADAS PARA AIRPHORIA NO PC</h2>
+                    <ul>
+                        <li className={styles.li}>Modo de renderização: <strong>DirectX 121</strong> (é necessário reiniciar)
+                            <li className={styles.liCircle}>Pode ser que você precise atualizar os drivers.</li>
+                        </li>
+                        <li className={styles.li}>Habilite <strong>Geometria Virtualizada de Nanite</strong></li>
+                        <li className={styles.li}>Defina a <strong>Iluminação Global</strong> como Lumens Altos ou Lumens Épico</li>
+                    </ul>
                     <h2 className={styles.tituloNoticia}>MAXXIMIZE SEU VESTIÁRIO COM AIRA E MAX MAXXIMISTA</h2>
                     <p className={styles.texto}>Aproveite os Trajes Aira e Max Maxximista, que já estão disponíveis na Loja de Itens! Ambos os Trajes fazem parte do Pacote Airphoria, que ainda conta com os Acessórios para as Costas <strong>Toca-músicas Solista</strong> e <strong>Pilha Máxxima</strong>. Coloque no volume máximo e arrebente na batalha.</p>
                     <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-airie-and-maxxed-out-max-outfits-1920x1080-be79c667f724.jpg" />
                     <p className={styles.texto}>Deixe Aira e Max Maxximista ainda mais estilosos com outros itens da Loja:</p>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li className={styles.li}><strong>Picareta Aerotênis:</strong> amortece o impacto como nenhum outro.</li>
+                        <li className={styles.li}><strong>Picareta Maxxado:</strong> o queridinho dos maiores colecionadores.</li>
+                        <li className={styles.li}><strong>Asa-delta Voo Máxximo:</strong> amarre o cadarço no ar.</li>
+                        <li className={styles.li}><strong>Gesto Limpeza Expressa:</strong> mantendo o tênis nos trinques.</li>
                     </ul>
-
+                    <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-airie-and-maxxed-out-max-accessories-1920x1080-b8b67cc56306.jpg" />
+                    <p className={styles.texto}>As Picaretas Aerotênis e Maxxado, a Asa-delta Voo Máxximo e o Gesto Limpeza Expressa podem ser comprados separadamente ou no Pacotão Equipamentos Airphoria, que também inclui o <strong>Emoticon Airceno</strong>, o <strong>Spray Volume Máxximo</strong> e a <strong>Tela de Carregamento Airphoria:</strong></p>
+                    <img className={styles.img} src="https://cdn2.unrealengine.com/fortntie-air-wave-emoticon-maxx-volume-spray-and-airphoria-loading-screen-1920x1080-65dcc1452b2f.jpg" />
+                    <p className={styles.texto}>A Tela de Carregamento Airphoria em detalhes:</p>
+                    <img className={styles.img} src="https://cdn2.unrealengine.com/fortntie-airphoria-loading-screen-1920x1080-e030f089e3a4.jpg" alt="" />
+                    <p className={styles.center}>
+                        <em className={styles.emm}>De olho no prêmio. Arte por Sam Mackenzie.</em>
+                    </p>
+                    <h2 className={styles.tituloNoticia}>OSTENTE SUAS CONQUISTAS NA .SWOOSH</h2>
+                    <p className={styles.texto}>Os jogadores que tiverem, no mínimo, 13 anos, morarem nos Estados Unidos e vincularem suas contas da Epic Games e Nike entre 20 de junho às 13h BRT e 27 de junho às 21h BRT poderão resgatar uma Conquista em <strong>.SWOOSH</strong> até dia 8 de agosto de 2023. Sujeito aos Termos e condições. Saiba mais em <a className={styles.colorLink} href="https://www.epicgames.com/help/en-US/fortnite-c5719335176219/accounts-c19319138499099/earn-achievements-on-swoosh-a16225767406107">fn.gg/airphoria-swoosh-achievements.</a></p>
+                    <hr className={styles.hr} />
+                    <p className={styles.textoUltimo}>Calce seu tênis para voar nas nuvens de Airphoria 👟</p>
+                    <img className={styles.imgUltima} src="https://cdn2.unrealengine.com/fortnite-airphoria-4-1920x1080-378ef0c7e625.jpg" />
                 </div>
             </div>
             <Footer />

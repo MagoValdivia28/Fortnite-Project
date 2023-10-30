@@ -12,6 +12,12 @@
     padding-top: 1em;
 }
 
+.imgUltima{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
 .section {
     margin-left: auto;
     margin-right: auto;
@@ -41,8 +47,15 @@
 
 .texto {
     font-family: OpenSans, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 2;
+    margin: 1em 0;
+}
+
+.textoUltimo{
+    padding-top: 3em;
+    font-family: OpenSans, sans-serif;
+    font-size: 1.1em;
     margin: 1em 0;
 }
 
@@ -69,8 +82,32 @@
     text-align: center;
 }
 
-.li{
-    font-size: 1em;
-    line-height: 2;
+.li {
+    font-size: 1.1em;
+    line-height: 3;
     list-style-type: inherit;
+    font-family: OpenSans, sans-serif;
+}
+
+.li::before {
+    content: "•";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.9em;
+}
+
+.liCircle {
+    list-style-type: circle;
+    font-family: OpenSans, sans-serif;
+    margin-left: 2.5em;
+}
+
+.colorLink {
+    font-family: OpenSans, sans-serif;
+    color: #1db8f3;
+}
+
+.hr {
+    border-top: 1px solid #b3b3b3;
 }
