@@ -100,8 +100,35 @@ Adicionamos a regra 1.18 (Apresentação do Conteúdo da Ilha)
 <p className={styles.p3}>2.3 O Unreal Editor para Fortnite permite que criadores adultos trabalhem juntos em equipes, que são gerenciadas pelo Portal de Criadores do Fortnite. Você é responsável por garantir que o conteúdo criado e publicado por equipes que sejam suas siga as regras aqui expressas. Todo conteúdo da sua equipe é de sua responsabilidade, ainda que o conteúdo irregular tenha sido feito ou importado por outro membro da equipe.</p>
 </div>
 
+<div>
+<h2 className={styles.p3}>3. DIVULGANDO SUA ILHA</h2>
+<p className={styles.p3}>Queremos facilitar a divulgação da sua Ilha no Fortnite e ajudar no sucesso dela. A divulgação da Ilha, seja dentro ou fora do Fortnite, deve seguir as regras:</p>
+<h3 className={styles.h3}>3.1. Uso da Propriedade Intelectual da Epic Games e do Fortnite em Divulgações</h3>
+<p className={styles.p3}>3.1.1. Ao divulgar a sua Ilha, ela não deve ser representada como um trabalho desenvolvido em parceria com a Epic Games nem como uma Ilha oficial do Fortnite da Epic Games, seja do presente ou do passado.
+</p>
+<p className={styles.p3}>3.1.2. Ao divulgar sua Ilha, você pode usar o logotipo "Criado no Fortnite", com a condição de que ele siga as nossas Diretrizes Sobre Gestão de Marca do Modo Criativo do Fortnite.</p>
+<p className={styles.p3}>3.1.3. Não use os logotipos do Fortnite nem da Epic Games em nenhum lugar da sua Ilha nem nos materiais promocionais dela.</p>
+<p className={styles.p3}>3.1.4. Ao divulgar sua Ilha, todos os recursos usados devem ter a cara da sua Ilha e seguir as Diretrizes Sobre Gestão de Marca do Modo Criativo do Fortnite. Não crie propaganda enganosa da sua experiência para os jogadores. Não são permitidas fotografias.
+</p>
+<p className={styles.p3}>3.1.5. Você deve incluir em destaque a seguinte frase em todo material promocional: "Isto não é patrocinado, apoiado ou administrado pela Epic Games, Inc.".</p>
+<p className={styles.p3}>3.1.6. Ao criar materiais promocionais para a sua Ilha, você só pode exibir Trajes ou outros itens que sejam de propriedade da Epic Games (ou que você tenha permissão explícita para usar ou do qual possua os direitos). Por exemplo, não use os Trajes da Marvel nem da DC.</p>
+</div>
 
-
+<div>
+    <h3 className={styles.h3}>3.2 Atividades de Marketing</h3>
+    <p className={styles.p3}>3.2.1. Todo o conteúdo de marketing que você usar para promover a sua Ilha, independentemente do canal ou do formato, deve estar de acordo com estas regras. A Epic se reserva o direito de proibir qualquer atividade de marketing que julgue violar estas regras.
+</p>
+<p className={styles.p3}>3.2.2. Não promova a sua Ilha por meio de anúncios comerciais na televisão nem em redes de anúncios digitais sem prévio e expresso consentimento da Epic Games. Para solicitar o consentimento, entre em contato conosco usando o Formulário de Suporte aos Criadores.</p>
+<p className={styles.p3}>3.2.3. Você pode promover sua Ilha digitalmente por meio de anúncios e recursos dos seus próprios sites, canais ou plataformas sociais, bem como em anúncios de mecanismos de busca baseados em texto, tais quais os do Google Busca.
+</p >
+<p className={styles.p3}>3.2.4. Caso recorra a influenciadores para promover a sua Ilha, compensando-os monetariamente, siga todas as leis aplicáveis, como as Diretrizes de Apoio da FTC, de modo que a conexão do influenciador com a sua Ilha seja completamente transparente.</p>
+<p className={styles.p3}>3.2.5. Não crie nem distribua nenhum item promocional físico de nenhum tipo para promover sua Ilha, a exemplo de roupas, adesivos, folhetos, canecas, etc., sem prévio e expresso consentimento da Epic Games.
+</p>
+<p className={styles.p3}>3.2.6. Ao promover sua Ilha através de anúncios de busca, não compre anúncios que incluam palavras-chave nem termos de busca que sejam marcas registradas da Epic Games, como "Fortnite" e "Epic Games".
+</p>
+<p className={styles.p3}>3.2.7. Fortnite é um jogo de classificação ESRB Teen e PEGI 12 (Classificação indicativa 12 anos no Brasil). Todo o material publicitário, de divulgação e/ou comunicação relacionado à sua Ilha deve seguir a classificação etária brasileira de 12 anos. Você não deve fazer publicidade, divulgação nem comunicação da sua Ilha tendo como alvo o público menor de 13 anos.
+ </p>
+</div>
 
 
                     </div>
