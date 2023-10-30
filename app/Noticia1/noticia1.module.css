@@ -1,0 +1,113 @@
+.img1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.imgUltima{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 880px;
+    padding: 0 16px;
+}
+
+
+.tituloHeader {
+    padding-top: 1em;
+    font-size: 2.8em;
+    line-height: 1;
+    margin: 0 0 .25em;
+    text-transform: uppercase;
+}
+
+.dataHeader {
+    font-family: OpenSans, sans-serif;
+    font-size: 1em;
+}
+
+.autorHeader {
+    font-family: OpenSans, sans-serif;
+    font-size: 1em;
+    margin: 1em 0 1.25em;
+}
+
+.texto {
+    font-family: OpenSans, sans-serif;
+    font-size: 1.1em;
+    line-height: 2;
+    margin: 1em 0;
+}
+
+.textoUltimo{
+    padding-top: 3em;
+    font-family: OpenSans, sans-serif;
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+
+.video {
+    width: 100%;
+    height: 450px;
+}
+
+.tituloNoticia {
+    padding-top: 1em;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.1 !important;
+    font-size: 1.875em;
+    text-transform: uppercase;
+}
+
+.emm {
+    font: italic;
+    font-family: OpenSans, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.li {
+    font-size: 1.1em;
+    line-height: 3;
+    list-style-type: inherit;
+    font-family: OpenSans, sans-serif;
+}
+
+.li::before {
+    content: "•";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.9em;
+}
+
+.liCircle {
+    list-style-type: circle;
+    font-family: OpenSans, sans-serif;
+    margin-left: 2.5em;
+}
+
+.colorLink {
+    font-family: OpenSans, sans-serif;
+    color: #1db8f3;
+}
+
+.hr {
+    border-top: 1px solid #b3b3b3;
+}
