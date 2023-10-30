@@ -64,8 +64,8 @@ const Noticia2 = () => {
                         <li className={styles.lii}>20ª: 12 pontos</li>
                         <li className={styles.lii}>21ª: 10 pontos</li>
                         <li className={styles.lii}>22ª: 8 pontos</li>
-                        <li className={styles.lii}></li>
-                        <li className={styles.lii}></li>
+                        <li className={styles.lii}>23ª: 6 pontos</li>
+                        <li className={styles.lii}>24ª: 4 pontos</li>
                         <li className={styles.lii}></li>
                         <li className={styles.lii}></li>
                         <li className={styles.lii}></li>
