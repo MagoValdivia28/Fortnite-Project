@@ -19,7 +19,7 @@ const Header = () => (
             <ul className={styles.list}>
                 <li>
               
-                    <Link className={styles.item} href="./"><p><AiFillHome /> Home</p></Link>
+                    <Link className={styles.item} href="./"><p><AiFillHome /> Pagina Inicial</p></Link>
                 </li>
                 <li>
 
