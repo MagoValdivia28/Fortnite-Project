@@ -32,8 +32,10 @@ const Noticia2 = () => {
                     <li className={styles.li}>Assista por 30 minutos no Dia 3 no Lar das Lendas ou em competitive.fortnite.com: <strong>Tela de Carregamento Lendas Cintilantes</strong></li>
                     <li className={styles.li}>Assista por 1 hora no Dia 3 no Lar das Lendas ou em competitive.fortnite.com: <strong>Acessório para as Costas Escudo Eficiente</strong></li>
                     <p className={styles.texto}>Esses itens não estarão mais disponíveis para resgate por meio de saques do Fortnite após o fim da transmissão oficial do Campeonato Global do FNCS 2023, em 15 de outubro, mas, posteriormente, podem ser disponibilizados para compra na Loja de Itens do Fortnite.</p>
-                    <p className={styles.texto}>Aproveite os Trajes Aira e Max Maxximista, que já estão disponíveis na Loja de Itens! Ambos os Trajes fazem parte do Pacote Airphoria, que ainda conta com os Acessórios para as Costas <strong>Toca-músicas Solista</strong> e <strong>Pilha Máxxima</strong>. Coloque no volume máximo e arrebente na batalha.</p>
-                    <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-airie-and-maxxed-out-max-outfits-1920x1080-be79c667f724.jpg" />
+                    <h2 className={styles.tituloNoticia}>TRANSMISSÃO SEM COMENTÁRIOS</h2>
+                    <p className={styles.texto}>Caso queira organizar o seu próprio grupo de espectadores ou praticar as suas habilidades de comentarista enquanto ganha saques do Fortnite, disponibilizaremos uma transmissão sem comentários em fn.gg/cleanfeed. Não se esqueça de ler e aceitar os nossos Termos de Serviço antes de acessar a transmissão.</p>
+                    <p className={styles.texto}>A transmissão sem comentários nada mais é que uma transmissão apenas do jogo, sem comentários nem narração!</p>
+                    <img className={styles.img} src="https://cdn2.unrealengine.com/fncs-global-championship-community-cup-1920x1080-5a9474af4cec.jpg" />
                     <p className={styles.texto}>Deixe Aira e Max Maxximista ainda mais estilosos com outros itens da Loja:</p>
                     <ul>
                         <li></li>
