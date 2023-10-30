@@ -128,6 +128,20 @@ Adicionamos a regra 1.18 (Apresentação do Conteúdo da Ilha)
 </p>
 <p className={styles.p3}>3.2.7. Fortnite é um jogo de classificação ESRB Teen e PEGI 12 (Classificação indicativa 12 anos no Brasil). Todo o material publicitário, de divulgação e/ou comunicação relacionado à sua Ilha deve seguir a classificação etária brasileira de 12 anos. Você não deve fazer publicidade, divulgação nem comunicação da sua Ilha tendo como alvo o público menor de 13 anos.
  </p>
+ <h3 className={styles.h3}>3.3 Marketing de Eventos</h3>
+ <p className={styles.p3}>3.3.1. Você pode promover sua Ilha por meio de eventos físicos e online, contanto que seu evento, competição ou torneio esteja de acordo com todos os Termos de Licença de Eventos Fortnite e com as Regras de Eventos de Terceiros do Fortnite.
+ </p>
+ <h3 className={styles.h3}>3.4 Concursos e Sorteios</h3>
+ <p className={styles.p3}>3.4.1. Sua Ilha do Fortnite não pode ser usada para conduzir ou promover um concurso ou sorteio com prêmios ("Promoção"). Isso significa que todos os aspectos de uma Promoção (incluindo referências à Promoção, materiais promocionais, instruções de participação, métodos de participação, seleção de vencedores e prêmios concedidos) devem ser realizados fora da sua Ilha do Fortnite.</p>
+<p className={styles.p3}>3.4.2. Ao conduzir ou promover uma Promoção fora do Fortnite ligada à sua Ilha, você deve seguir as regras da Seção 3 e todas as leis aplicáveis (incluindo os requisitos de registro). Você também:</p>
+<p className={styles.p3}>3.4.2.1. Não pode encorajar ou exigir que participantes façam qualquer tipo de compra ou pagamento ligado à sua Promoção. Por exemplo: você não pode restringir a participação na Promoção por taxas, assinaturas/inscrições pagas, ou outra forma de compra, nem insinuar que uma determinada compra pode aumentar suas chances de vencer;</p>
+<p className={styles.p3}>3.4.2.2. Publicar as regras oficiais da Promoção ("Termos da Promoção"), incluindo todos os avisos e termos exigidos por lei, e deixá-los disponíveis sempre que uma Promoção foi realizada e participações aceitas;</p>
+<p className={styles.p3}>3.4.2.3. Nos Termos da Promoção e onde a Promoção for realizada ou entradas forem aceitas, certifique-se de que os patrocinadores da Promoção estão identificados nitidamente e informe o aviso a seguir: "Esta promoção não é patrocinada, endossada nem administrada pela Epic Games, Inc."; e</p>
+<p className={styles.p3}>3.4.2.4. Inclua os avisos a seguir nos Termos da Promoção:</p>
+<p className={styles.p3}>Para todas as Promoções: "AO PARTICIPAR DESTE EVENTO, NA EXTENSÃO PERMITIDA PELA LEI APLICÁVEL, OS PARTICIPANTES CONCORDAM EM LIBERAR E ISENTAR A EPIC GAMES, INC., SEUS LICENCIADORES, SEUS RESPECTIVOS AFILIADOS E FUNCIONÁRIOS, EXECUTIVOS, DIRETORES, AGENTES, CONTRATADOS E OUTROS REPRESENTANTES DE TODA E QUALQUER RECLAMAÇÃO, EXIGÊNCIA, AÇÃO, PERDA, RESPONSABILIDADE E DESPESA RELACIONADA À PROMOÇÃO."
+</p>
+<p className={styles.p3}>Além disso, se os participantes precisarem fornecer alguma informação pessoal ou da conta: "AS INFORMAÇÕES DOS PARTICIPANTES FORNECIDAS LIGADAS À ESTA PROMOÇÃO SÃO ENTREGUES AO PATROCINADOR, NÃO À EPIC GAMES, INC. 
+ </p>
 </div>
 
 
