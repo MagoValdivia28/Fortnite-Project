@@ -61,9 +61,10 @@ function CatalogSkins() {
     setVbucks(null);
   }
 
-  const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada) => {
-    listaRoupas.addRoupa(nome, descricao, rarity, data, capitulo, temporada);
-    console.log(nome, descricao, rarity, data, capitulo, temporada);
+  const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada, imagem) => {
+    listaRoupas.addRoupa(nome, descricao, rarity, data, capitulo, temporada, imagem);
+    const updatedSkins = [...listaFinal, ...listaRoupas.getRoupas()]; // Combine os dados da API com os existentes
+    setListaFinal(updatedSkins);
   }
 
   useEffect(() => {
