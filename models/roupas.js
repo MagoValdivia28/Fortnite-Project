@@ -9,4 +9,8 @@ export default class Roupas {
         const novaRoupa = new Roupa(nome, descricao, rarity, dataLancamento, capitulo, temporada);
         this.roupas.push(novaRoupa);
     }
+
+    getRoupas() {
+        return this.roupas;
+    }
 }

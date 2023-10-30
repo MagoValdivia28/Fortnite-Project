@@ -11,6 +11,7 @@ import { PuffLoader } from 'react-spinners';
 import Roupas from '../../models/roupas';
 
 function CatalogSkins() {
+  const [listaFinal, setListaFinal] = useState([]);
   const [apiData, setApiData] = useState(null);
   const [name, setName] = useState(null);
   const [rarity, setRarity] = useState(null);
@@ -84,11 +85,11 @@ function CatalogSkins() {
       /*       // Atualize o estado com a lista de agentes atualizada
       const updatedAgentes = [...listaAgentes, ...instanciaLista.getListaAgentes()]; // Combine os dados da API com os existentes
       setListaAgentes(updatedAgentes); */
+      setListaFinal(listaRoupas.getRoupas());
     }
   }, [apiData]);
+  console.log(listaRoupas.getRoupas());
   
-  console.log(listaRoupas.roupas);
-
   return (
     <div className={styles.main}>
       <Header />
@@ -118,10 +119,9 @@ function CatalogSkins() {
               ) : null
             }
             {
-              listaRoupas.roupas.map((cardSkin) => (
-                <Skin list={cardSkin} func={handleSkin} />
+              listaFinal.map((cardSkin) => (
+                  <Skin list={cardSkin} func={handleSkin} />  
               ))
-
             }
           </div>
         ) : (
