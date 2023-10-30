@@ -24,12 +24,14 @@ const Noticia2 = () => {
                     <li className={styles.li}>O final de semana inteiro!</li>
                     <p className={styles.texto}>Você também pode assistir ao Campeonato Global do FNCS 2023 em outro lugar: o Lar das Lendas, no Fortnite! Assista à ação com outros jogadores e use Gestos para torcer pela sua dupla favorita. Acesse o Lar das Lendas com o Código da Ilha <a href={"https://www.fortnite.com/@gamefamx/3303-7480-5925"}>3303-7480-5925</a>, ou selecionando-a no Descobrir.</p>
                     <h2 className={styles.tituloNoticia}>GANHE SAQUES ASSISTINDO</h2>
-                    <p className={styles.texto}>Você pode ganhar saques do Fortnite assistindo à competição! Ganhe saques do Fortnite assistindo no Lar das Lendas ou em competitive.fortnite.com. Caso você assista em competitive.fortnite.com, lembre-se de se conectar com sua conta Epic Games.</p>
+                    <p className={styles.texto}>Você pode ganhar saques do Fortnite assistindo à competição! Ganhe saques do Fortnite assistindo no Lar das Lendas ou em<a href={"https://competitive.fortnite.com"}>competitive.fortnite.com.</a>  Caso você assista em <a href={"https://competitive.fortnite.com"}>competitive.fortnite.com</a>, lembre-se de se conectar com sua conta Epic Games.</p>
                     <img className={styles.img} src="https://cdn2.unrealengine.com/pt-br-loc-26comp-fncs-gc-rewards-social-1920x1080-a64178fcf5e9.jpg" />
-                    <p className={styles.center}>
-                        <em className={styles.emm}>O original</em>
-                    </p>
-                    <h2 className={styles.tituloNoticia}>MAXXIMIZE SEU VESTIÁRIO COM AIRA E MAX MAXXIMISTA</h2>
+                    <p className={styles.texto}>Você não precisa competir para pontuar. Obtenha saques do Fortnite assistindo ao Campeonato Global do FNCS 2023:</p>
+                    <li className={styles.li}>Assista por 30 minutos no Dia 1 no Lar das Lendas ou em competitive.fortnite.com: <strong>Emoticon Mostre seu Troféu</strong></li>
+                    <li className={styles.li}>Assista por 30 minutos no Dia 2 no Lar das Lendas ou em competitive.fortnite.com: <strong> Spray Vitória Infinita</strong></li>
+                    <li className={styles.li}>Assista por 30 minutos no Dia 3 no Lar das Lendas ou em competitive.fortnite.com: <strong>Tela de Carregamento Lendas Cintilantes</strong></li>
+                    <li className={styles.li}>Assista por 1 hora no Dia 3 no Lar das Lendas ou em competitive.fortnite.com: <strong>Acessório para as Costas Escudo Eficiente</strong></li>
+                    <p className={styles.texto}>Esses itens não estarão mais disponíveis para resgate por meio de saques do Fortnite após o fim da transmissão oficial do Campeonato Global do FNCS 2023, em 15 de outubro, mas, posteriormente, podem ser disponibilizados para compra na Loja de Itens do Fortnite.</p>
                     <p className={styles.texto}>Aproveite os Trajes Aira e Max Maxximista, que já estão disponíveis na Loja de Itens! Ambos os Trajes fazem parte do Pacote Airphoria, que ainda conta com os Acessórios para as Costas <strong>Toca-músicas Solista</strong> e <strong>Pilha Máxxima</strong>. Coloque no volume máximo e arrebente na batalha.</p>
                     <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-airie-and-maxxed-out-max-outfits-1920x1080-be79c667f724.jpg" />
                     <p className={styles.texto}>Deixe Aira e Max Maxximista ainda mais estilosos com outros itens da Loja:</p>
