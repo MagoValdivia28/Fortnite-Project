@@ -66,9 +66,16 @@ const Noticia2 = () => {
                         <li className={styles.lii}>22ª: 8 pontos</li>
                         <li className={styles.lii}>23ª: 6 pontos</li>
                         <li className={styles.lii}>24ª: 4 pontos</li>
-                        <li className={styles.lii}></li>
-                        <li className={styles.lii}></li>
-                        <li className={styles.lii}></li>
+                        <li className={styles.lii}>25ª: 2 pontos</li>
+
+                        <h4 className={styles.subtituloNoticia}>CADA ELIMINAÇÃO</h4>
+                        <p className={styles.texto}>2 pontos</p>
+                        <h4 className={styles.subtituloNoticia}>OBJETIVOS DE MEIO DE PARTIDA</h4>
+                        <p className={styles.texto}>Equipe assegura uma Torre de Previsão do Tempo: 3 pontos</p>
+                        <p className={styles.texto}>Equipe captura a Fenda de PI da Ilha de Saque: 15 pontos</p>
+
+                        <p className={styles.texto}>Entre outros requisitos de participação, os competidores precisarão ter a Autenticação de Dois Fatores na conta Epic habilitada e verificada, ter uma conta no nível 15 ou superior (você pode verificar o Nível da Conta na aba "Carreira", no Fortnite) e estar no ranque Bronze I ou superior no Battle Royale Ranqueado. Pessoas com <a href={"https://www.epicgames.com/site/pt-BR/cabinedaccounts"}>Contas Limitadas</a> não poderão participar do Campeonato Global da Comunidade do FNCS. </p>
+                        <p className={styles.texto}>Boa sorte a todos os competidores! 🏆</p>
 
                 </div>
             </div>
