@@ -25,10 +25,7 @@ const Header = () => (
 
                     <Link className={styles.item} href="/CatalogSkins"> <p><RiTShirtFill /> Skins</p></Link>
                 </li>
-                <li>
 
-                    <Link className={styles.item} href="/"><p><FaMap /> Mapas</p></Link>
-                </li>
                 <li>
 
                     <Link className={styles.item} href="/sobrenos"><p><IoIosPeople /> Equipe</p></Link>
