@@ -1,7 +1,7 @@
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import styles from "./noticia4.module.css";
-const Noticia1 = () => {
+const Noticia4 = () => {
     return (
         <>
             <Header />
@@ -39,5 +39,5 @@ const Noticia1 = () => {
         </>
     )
 }
-export default Noticia1;
+export default Noticia4;
 

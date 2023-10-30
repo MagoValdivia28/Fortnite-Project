@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-const Pessoa = () => {
+const Noticia3 = () => {
     return (
 
         <div className={styles.principal}>
@@ -234,4 +234,4 @@ const Pessoa = () => {
     )
 };
 
-export default Pessoa;
+export default Noticia3;
