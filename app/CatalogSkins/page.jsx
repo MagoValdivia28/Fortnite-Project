@@ -7,7 +7,11 @@ import styles from './catalogoSkins.module.css';
 import Skin from '../components/skin/Skin';
 import InfoCard from '../components/infoCard/InfoCard';
 import PopUpCadastro from '../components/PopUpCadastro/cadastro';
+<<<<<<< HEAD
 import { PuffLoader } from 'react-spinners';
+=======
+import { MoonLoader } from 'react-spinners'
+>>>>>>> 2be0cacbdc3e5496093db1ee2c50cf7fc3f2472b
 
 function CatalogSkins() {
   const [apiData, setApiData] = useState(null);
@@ -115,7 +119,7 @@ function CatalogSkins() {
             color="yellow"
             className={styles.loading}
             speedMultiplier={0.8}
-            size={110}
+            size={80}
           />
         )
       }
