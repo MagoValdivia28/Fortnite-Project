@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, rgb(62, 106, 201) 100%);
+    background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, #3e6ac9 100%);
     gap: 10px;
 }
 
@@ -80,4 +80,10 @@
 .skinpronta{
     align-items: center;
     text-align: center;
+}
+.loading{
+    margin: auto;
+    margin-top: 30.4vh;
+    margin-bottom: 30.3vh;
+    ;
 }
