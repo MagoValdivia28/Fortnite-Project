@@ -20,9 +20,9 @@ const Noticia2 = () => {
                     <p className={styles.texto}>Assista à Vitória Royale na Royal Arena. Os ingressos para assistir pessoalmente ao Campeonato Global do FNCS 2023, na Royal Arena de Copenhague, estão à venda em <a href={"http://fn.gg/tickets"}> fn.gg/tickets.</a> Há ingressos para:</p>
                     <li className={styles.li}>Sexta-feira, 13 de outubro</li>
                     <li className={styles.li}>Sábado, 14 de outubro</li>
-                    <li className={styles.li}>Sexta-feira, 13 de outubro</li>
-                    <li className={styles.li}>Sexta-feira, 13 de outubro</li>
-                    <p className={styles.texto}>Airphoria é uma colaboração entre Beyond Creative, Nike e Epic Games, que utiliza o Unreal Editor para Fortnite (UEFN). A Ilha Airphoria já está disponível até 27 de junho de 2023, às 21h BRT. Você pode acessá-la pelo Descobrir ou usando o Código da Ilha  2118-5342-7190! A partir de 28 de junho, quem jogar na Ilha por no mínimo 10 minutos receberá o Acessório para as Costas Air Max 1 '86. (Pode levar um tempo até você receber a caixa de presente com o item.)</p>
+                    <li className={styles.li}>Domingo, 15 de outubro</li>
+                    <li className={styles.li}>O final de semana inteiro!</li>
+                <p className={styles.texto}>Você também pode assistir ao Campeonato Global do FNCS 2023 em outro lugar: o Lar das Lendas, no Fortnite! Assista à ação com outros jogadores e use Gestos para torcer pela sua dupla favorita. Acesse o Lar das Lendas com o Código da Ilha <a href={"https://www.fortnite.com/@gamefamx/3303-7480-5925"}>3303-7480-5925</a>, ou selecionando-a no Descobrir.</p>
                     <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-air-max-1-86-back-bling-1920x1080-f794829b3958.jpg" />
                     <p className={styles.center}>
                         <em className={styles.emm}>O original</em>
