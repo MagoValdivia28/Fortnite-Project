@@ -22,8 +22,10 @@ const Noticia2 = () => {
                     <li className={styles.li}>Sábado, 14 de outubro</li>
                     <li className={styles.li}>Domingo, 15 de outubro</li>
                     <li className={styles.li}>O final de semana inteiro!</li>
-                <p className={styles.texto}>Você também pode assistir ao Campeonato Global do FNCS 2023 em outro lugar: o Lar das Lendas, no Fortnite! Assista à ação com outros jogadores e use Gestos para torcer pela sua dupla favorita. Acesse o Lar das Lendas com o Código da Ilha <a href={"https://www.fortnite.com/@gamefamx/3303-7480-5925"}>3303-7480-5925</a>, ou selecionando-a no Descobrir.</p>
-                    <img className={styles.img} src="https://cdn2.unrealengine.com/fortnite-air-max-1-86-back-bling-1920x1080-f794829b3958.jpg" />
+                    <p className={styles.texto}>Você também pode assistir ao Campeonato Global do FNCS 2023 em outro lugar: o Lar das Lendas, no Fortnite! Assista à ação com outros jogadores e use Gestos para torcer pela sua dupla favorita. Acesse o Lar das Lendas com o Código da Ilha <a href={"https://www.fortnite.com/@gamefamx/3303-7480-5925"}>3303-7480-5925</a>, ou selecionando-a no Descobrir.</p>
+                    <h2 className={styles.tituloNoticia}>GANHE SAQUES ASSISTINDO</h2>
+                    <p className={styles.texto}>Você pode ganhar saques do Fortnite assistindo à competição! Ganhe saques do Fortnite assistindo no Lar das Lendas ou em competitive.fortnite.com. Caso você assista em competitive.fortnite.com, lembre-se de se conectar com sua conta Epic Games.</p>
+                    <img className={styles.img} src="https://cdn2.unrealengine.com/pt-br-loc-26comp-fncs-gc-rewards-social-1920x1080-a64178fcf5e9.jpg" />
                     <p className={styles.center}>
                         <em className={styles.emm}>O original</em>
                     </p>
