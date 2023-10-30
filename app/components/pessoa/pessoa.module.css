@@ -4,19 +4,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: 2px solid rgb(18, 133, 179);
-    gap: 10px;
     padding: 2px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    text-align: center;
     margin: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .card {
     position: relative;
+    border-radius: 10px;
 }
 
+.img{
+    border-radius: 10px;
+}
 
 .cardDescription {
     position: absolute;
