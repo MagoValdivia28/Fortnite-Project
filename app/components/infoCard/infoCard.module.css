@@ -166,9 +166,9 @@
 }
 
 .dark {
-    border: 2px solid rgb(132, 45, 173);
-    background-size: contain;
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/0/0a/Dark_Series_Rarity_Locker_Texture.png');
+    border: 2px solid rgb(168, 153, 174);
+    background-size: cover;
+    background-image: url('../../../public/Dark_Series_-_Rarity_-_Fortnite.gif');
 }
 
 .lava {
