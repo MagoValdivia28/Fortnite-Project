@@ -141,7 +141,7 @@
 }
 
 .marvel {
-    background-image: url('https://media.fortniteapi.io/images/textures/Marvel.png');
+    background-image: url('../../../public/Marvel_Series_-_Rarity_-_Fortnite.webp');
     background-size: cover;
     border: 2px solid rgb(151, 35, 35);
 
@@ -154,13 +154,13 @@
 }
 
 .starwars {
-    background-image: url('https://i.pinimg.com/originals/d7/a6/11/d7a61190a836bdcfc62bf97af4f4c74b.png');
+    background-image: url('../../../public/Star_Wars_Series_-_Rarity_-_Fortnite.gif');
     background-size: cover;
     border: 2px solid rgb(255, 255, 255);
 }
 
 .icon {
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/e/eb/Icon_Series_Rarity_Locker_Texture.png');
+    background-image: url('../../../public/Icon_Series_-_Rarity_-_Fortnite.gif');
     background-size: cover;
     border: 2px solid rgb(45, 173, 158);
 }
@@ -172,7 +172,7 @@
 }
 
 .lava {
-    background-image: url('https://static.wikia.nocookie.net/fortnite_gamepedia/images/7/7a/Lava_Series_Rarity_Locker_Texture.png');
+    background-image: url('../../../public/Lava_Series_-_Rarity_-_Fortnite.gif');
     background-size: cover;
 }
 
