@@ -2,7 +2,7 @@
 import styles from './infoCard.module.css'
 import Price from '../price/Price'
 
-const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, introduction, added, close }) => {
+const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, chapter, season, added, close }) => {
     function mesclar(rarity) {
         if(rarity == 'starwars' || rarity == 'gaminglegends' || rarity == 'shadow' ) {
             return 'normal'
@@ -21,7 +21,7 @@ const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, introduction, add
                     <h1>{nome}</h1>
                 </div>
                 <div className={styles.mainContainer}>
-                    <p>{introduction}</p>
+                    <p> introduzido no capitulo: {chapter} temporada {season}</p>
                     <div className={styles.containerInfoImage}>
                         <div className={styles.avatar + ' ' + styles[vbucks]}>
                             <img src={imagem} width={166.5} height={253.5} alt={nome} />

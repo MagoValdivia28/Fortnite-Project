@@ -5,8 +5,12 @@ export default class Roupas {
         this.roupas = [];
     }
 
-    addRoupa(nome, raridade, preco, capitulo, dataLancamento) {
-        const novaRoupa = new Roupa(nome, raridade, preco, capitulo, dataLancamento);
+    addRoupa(nome, descricao, rarity, dataLancamento, capitulo, temporada, imagem) {
+        const novaRoupa = new Roupa(nome, descricao, rarity, dataLancamento, capitulo, temporada, imagem);
         this.roupas.push(novaRoupa);
+    }
+
+    getRoupas() {
+        return this.roupas;
     }
 }
