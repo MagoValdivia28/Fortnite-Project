@@ -2,17 +2,23 @@ import { useEffect, useState } from 'react';
 import styles from './cadastro.module.css';
 
 
-const PopUpCadastro = ({novosCadastros}) => {
+const PopUpCadastro = ({ novosCadastros, lista }) => {
     const [nome, setNome] = useState(null);
     const [descricao, setDescricao] = useState(null);
     const [rarity, setRarity] = useState('Common');
     const [data, setData] = useState(null);
     const [capitulo, setCapitulo] = useState('Capitulo1');
     const [temporada, setTemporada] = useState('temporada1');
+    const [raridade, setRaridade] = useState([]);
 
     const addSkin = () => {
-        novosCadastros(nome, descricao, rarity, data, capitulo, temporada, 'https://fortniteskins.net/wp-content/cache/thumb/91/9ce682852850991_666x630.webp');
+        novosCadastros(nome, descricao, rarity, data, capitulo, temporada, 'https://fortniteskins.net/wp-content/cache/thumb/dc/2ff2ec28cec1cdc_190x190.webp');
     }
+
+    useEffect(() => {
+        const raridadeFilter = lista.filter((skin, index) => lista.findIndex((skinUnica) => skinUnica.raridade == skin.raridade) == index);
+        setRaridade(raridadeFilter.map((skin) => skin.raridade));
+    }, [lista]);
 
     return (
         <div className={styles.card}>
@@ -22,7 +28,6 @@ const PopUpCadastro = ({novosCadastros}) => {
                 name="nome"
                 placeholder="Digite o nome de sua skin"
                 onChange={(e) => setNome(e.target.value)}
-                value={nome}
             />
 
             <input
@@ -30,15 +35,14 @@ const PopUpCadastro = ({novosCadastros}) => {
                 name="nome"
                 placeholder="Digite a descrição de sua skin"
                 onChange={(e) => setDescricao(e.target.value)}
-                value={descricao}
             />
 
-            <select value={rarity} onChange={(e) => setRarity(e.target.value)} name="rarity">
-                <option value="Common">Common</option>
-                <option value="Uncommon">Uncommon</option>
-                <option value="Rare">Rare</option>
-                <option value="Epic">Epic</option>
-                <option value='Legendary'>Legendary</option>
+            <select onChange={(e) => setRarity(e.target.value)} name="rarity">
+                {
+                    raridade.map((raridade) => (
+                        <option value={raridade}>{raridade}</option>
+                    ))
+                }
             </select>
 
             <input onChange={(e) => setData(e.target.value)}
@@ -70,7 +74,7 @@ const PopUpCadastro = ({novosCadastros}) => {
 
             <button className={styles.bntCriar} onClick={addSkin}>Criar</button>
         </div>
-        
+
     )
 }
 

@@ -7,8 +7,9 @@ import styles from './catalogoSkins.module.css';
 import Skin from '../components/skin/Skin';
 import InfoCard from '../components/infoCard/InfoCard';
 import PopUpCadastro from '../components/PopUpCadastro/cadastro';
-import { PuffLoader } from 'react-spinners';
 import Roupas from '../../models/roupas';
+import { PuffLoader } from 'react-spinners';
+
 
 function CatalogSkins() {
   const [listaFinal, setListaFinal] = useState([]);
@@ -50,7 +51,6 @@ function CatalogSkins() {
     setChapter(chapter);
     setSeason(season);
     setDateAdded(formattedData(dateAdded))
-   console.log(name, rarity, description, chapter, season, image, vbucks);
   }
 
   const handleClose = () => {
@@ -89,7 +89,6 @@ function CatalogSkins() {
       const updatedAgentes = [...listaAgentes, ...instanciaLista.getListaAgentes()]; // Combine os dados da API com os existentes
       setListaAgentes(updatedAgentes); */
       setListaFinal(listaRoupas.getRoupas());
-      console.log(listaRoupas.getRoupas());
     }
   }, [apiData]);
 
@@ -106,7 +105,7 @@ function CatalogSkins() {
       }
       {
         exibirPopUp && <div className={styles.cardCreator}>
-          <PopUpCadastro novosCadastros={handleCadastro} />
+          <PopUpCadastro novosCadastros={handleCadastro} lista={listaFinal}/>
           <button className={styles.bntExit} onClick={() => exit()}>X</button>
 
         </div>
