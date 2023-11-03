@@ -13,6 +13,14 @@ const PopUpCadastro = ({ novosCadastros, lista }) => {
 
     const addSkin = () => {
         novosCadastros(nome, descricao, rarity, data, capitulo, temporada, 'https://fortniteskins.net/wp-content/cache/thumb/dc/2ff2ec28cec1cdc_190x190.webp');
+        // clear fields
+        setNome('');
+        setDescricao('');
+        setRarity('Common');
+        setData('');
+        setCapitulo('Capitulo1');
+        setTemporada('temporada1');
+        
     }
 
     useEffect(() => {
@@ -52,24 +60,24 @@ const PopUpCadastro = ({ novosCadastros, lista }) => {
             />
 
             <select onChange={(e) => setCapitulo(e.target.value)}>
-                <option value="Capitulo1">Capitulo 1</option>
-                <option value="Capitulo2">Capitulo 2</option>
-                <option value="Capitulo3">capitulo 3</option>
-                <option value="Capitulo4">capitulo 4</option>
+                <option value="1">Capitulo 1</option>
+                <option value="2">Capitulo 2</option>
+                <option value="3">capitulo 3</option>
+                <option value="4">capitulo 4</option>
                 {/* Dps add por um For/filter todos os capitulos, pois será mto mais facil e pratico */}
             </select>
 
             <select onChange={(e) => setTemporada(e.target.value)}>
-                <option value="temporada1">temporada 1</option>
-                <option value="temporada2">temporada 2</option>
-                <option value="temporada3">temporada 3</option>
-                <option value="temporada4">temporada 4</option>
-                <option value="temporada5">temporada 5</option>
-                <option value="temporada6">temporada 6</option>
-                <option value="temporada7">temporada 7</option>
-                <option value="temporada8">temporada 8</option>
-                <option value="temporada9">temporada 9</option>
-                <option value="temporada10">temporada 10</option>
+                <option value="1">temporada 1</option>
+                <option value="2">temporada 2</option>
+                <option value="3">temporada 3</option>
+                <option value="4">temporada 4</option>
+                <option value="5">temporada 5</option>
+                <option value="6">temporada 6</option>
+                <option value="7">temporada 7</option>
+                <option value="8">temporada 8</option>
+                <option value="9">temporada 9</option>
+                <option value="10">temporada 10</option>
             </select>
 
             <button className={styles.bntCriar} onClick={addSkin}>Criar</button>
