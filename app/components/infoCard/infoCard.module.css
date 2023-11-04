@@ -97,6 +97,7 @@
 }
 
 .endContainer button {
+    cursor: pointer;
     margin: 3px 3px;
     color: black;
     padding: 3px 15px;

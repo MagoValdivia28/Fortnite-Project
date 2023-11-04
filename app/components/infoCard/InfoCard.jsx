@@ -2,9 +2,15 @@
 import styles from './infoCard.module.css'
 import Price from '../price/Price'
 
-const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, chapter, season, added, close }) => {
+const InfoCard = ({ list, close, remove, edit }) => {
+
+    const formattedData = (date) => {
+        const format = date.slice(0, 10);
+        return format.split('-').reverse().join('/');
+    }
+
     function mesclar(rarity) {
-        if(rarity == 'starwars' || rarity == 'gaminglegends' || rarity == 'shadow' ) {
+        if (rarity == 'starwars' || rarity == 'gaminglegends' || rarity == 'shadow') {
             return 'normal'
         } else {
             return 'overlay';
@@ -12,33 +18,32 @@ const InfoCard = ({ nome, raridade, descricao, imagem, vbucks, chapter, season, 
     }
     return (
         <div className={styles.containerBody}>
-            <div className={styles.cardContainer + ' ' + styles[vbucks]}>
+            <div className={styles.cardContainer + ' ' + styles[list.raridade]}>
                 <div className={styles.headerContainer}>
                     <button onClick={close} className={styles.x}>
                         X
                     </button>
-                    <h2 style={{mixBlendMode:mesclar(vbucks)}} className={styles.raridade}>{raridade} | OUTFIT</h2>
-                    <h1>{nome}</h1>
+                    <h2 style={{ mixBlendMode: mesclar(list.raridade) }} className={styles.raridade}>{list.raridade} | OUTFIT</h2>
+                    <h1>{list.nome}</h1>
                 </div>
                 <div className={styles.mainContainer}>
-                    <p> introduzido no capitulo: {chapter} temporada {season}</p>
+                    <p> Introduzido no Capitulo {list.capitulo} temporada {list.temporada}</p>
                     <div className={styles.containerInfoImage}>
-                        <div className={styles.avatar + ' ' + styles[vbucks]}>
-                            <img src={imagem} width={166.5} height={253.5} alt={nome} />
+                        <div className={styles.avatar + ' ' + styles[list.raridade]}>
+                            <img src={list.imagem} width={166.5} height={253.5} alt={list.nome} />
                         </div>
                         <div className={styles.description}>
-                            <p>{descricao}</p>
-                            <span>Adicionado em: {added}</span>
+                            <p>{list.descricao}</p>
+                            <span>Adicionado em: {formattedData(list.dataLancamento)}</span>
                         </div>
                     </div>
                 </div>
                 <div className={styles.endContainer}>
                     <div className={styles.price}>
-                        {/* <Image src={"/fortnite-v-buck.png"} alt={"V-bucks"} width={32} height={32} /> */}
-                        <Price rarity={vbucks} />
+                        <Price rarity={list.raridade} />
                     </div>
-                    <button>Editar</button>
-                    <button>Remover</button>
+                    <button onClick={() => edit(list)}>Editar</button>
+                    <button onClick={() => remove(list)}>Remover</button>
                 </div>
             </div>
         </div>
