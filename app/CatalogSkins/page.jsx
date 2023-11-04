@@ -11,8 +11,9 @@ import Roupas from '../../models/roupas';
 import Roupa from '../../models/roupa';
 import { PuffLoader } from 'react-spinners';
 
-const listaRoupas = new Roupas();
 
+
+const listaRoupas = new Roupas();
 function CatalogSkins() {
   const [listaFinal, setListaFinal] = useState([]);
   const [apiData, setApiData] = useState(null);
