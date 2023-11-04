@@ -2,7 +2,7 @@
 import styles from './infoCard.module.css'
 import Price from '../price/Price'
 
-const InfoCard = ({ list, close, remove }) => {
+const InfoCard = ({ list, close, remove, edit }) => {
 
     const formattedData = (date) => {
         const format = date.slice(0, 10);
@@ -42,7 +42,7 @@ const InfoCard = ({ list, close, remove }) => {
                     <div className={styles.price}>
                         <Price rarity={list.raridade} />
                     </div>
-                    <button>Editar</button>
+                    <button onClick={() => edit(list)}>Editar</button>
                     <button onClick={() => remove(list)}>Remover</button>
                 </div>
             </div>

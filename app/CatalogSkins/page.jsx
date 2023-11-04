@@ -17,22 +17,15 @@ function CatalogSkins() {
   const [listaFinal, setListaFinal] = useState([]);
   const [apiData, setApiData] = useState(null);
   const [listaSkin, setListaSkin] = useState(null);
-  const [name, setName] = useState(null);
-  const [rarity, setRarity] = useState(null);
-  const [description, setDescription] = useState(null);
-  const [image, setImage] = useState(null);
-  const [vbucks, setVbucks] = useState(null);
-  const [chapter, setChapter] = useState(null);
-  const [season, setSeason] = useState(null);
-  const [dateAdded, setDateAdded] = useState(null);
   const [exibirPopUp, setExibirPopUp] = useState(false);
   const [tipoPopUp, setTipoPopUp] = useState(null);
   const [on, setOn] = useState(true);
+  const [edited, setEdited] = useState(null);
 
   // Adicionar Skin
-  const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada, imagem) => {
+  const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada, imagem, ) => {
     // crio a skin
-    const novaSkin = new Roupa(nome, descricao, rarity, data, capitulo, temporada, imagem);
+    const novaSkin = new Roupa(nome, descricao, rarity, data, capitulo, temporada, imagem, );
     // Atualizo ela na instacia da lista
     const updatedSkins = [...listaFinal, novaSkin];
     setListaFinal(updatedSkins);
@@ -40,9 +33,20 @@ function CatalogSkins() {
     listaRoupas.addRoupa(novaSkin);
   }
 
+  const handleCadastroEdit = (nome, descricao, rarity, data, capitulo, temporada, imagem,id) => {
+    listaRoupas.getEditRoupaById(nome, descricao, rarity, data, capitulo, temporada, imagem ,id);
+    setListaFinal(listaRoupas.getRoupas());
+    setEdited(null);
+  }
+
   const removeSkin = (list) => {
     listaRoupas.getRemoveRoupaById(list);
     setListaFinal(listaRoupas.getRoupas());
+    handleClose();
+  }
+
+  const editSkin = (list) => {
+    setEdited(list);
     handleClose();
   }
 
@@ -87,7 +91,8 @@ function CatalogSkins() {
           skinData.added,
           skinData.introduction.chapter,
           skinData.introduction.season,
-          skinData.images.icon
+          skinData.images.icon,
+          skinData.rarity.displayValue
         );
         listaRoupas.addRoupa(novaSkin);
       });
@@ -106,7 +111,7 @@ function CatalogSkins() {
       }
       {
         exibirPopUp && <div className={styles.cardCreator}>
-          <PopUpCadastro novosCadastros={handleCadastro} lista={listaFinal} />
+          <PopUpCadastro novosCadastros={handleCadastro} editCadastro={handleCadastroEdit}  lista={listaFinal} handleEdit={edited} />
           <button className={styles.bntExit} onClick={() => exit()}>X</button>
 
         </div>
@@ -119,7 +124,7 @@ function CatalogSkins() {
           <div className={styles.containerSkin}>
             {
               listaSkin !== null ? (
-                <InfoCard list={listaSkin} close={handleClose} remove={removeSkin} />
+                <InfoCard list={listaSkin} close={handleClose} remove={removeSkin} edit={editSkin} />
               ) : null
             }
             {

@@ -1,5 +1,5 @@
 class Roupa {
-    constructor(nome,descricao, raridade, dataLancamento, capitulo, temporada, imagem ) {
+    constructor(nome,descricao, raridade, dataLancamento, capitulo, temporada, imagem,  ) {
         this.nome = nome;
         this.descricao = descricao;
         this.raridade = raridade;

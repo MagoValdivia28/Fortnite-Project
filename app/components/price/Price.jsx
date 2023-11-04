@@ -3,15 +3,15 @@ import styles from './price.module.css';
 
 
 const calcPrice = (rarity) => {
-  if (rarity === 'Legendary') {
+  if (rarity === 'legendary') {
     return 2000;
-  } else if (rarity === 'Epic') {
+  } else if (rarity === 'epic') {
     return 1500;
-  } else if (rarity === 'Rare') {
+  } else if (rarity === 'rare') {
     return 1200;
-  } else if (rarity === 'Uncommon') {
+  } else if (rarity === 'uncommon') {
     return 800;
-  } else if (rarity === 'Common') {
+  } else if (rarity === 'common') {
     return 500;
   } else {
     return 1500;
