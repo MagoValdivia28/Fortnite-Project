@@ -10,6 +10,7 @@ import PopUpCadastro from '../components/PopUpCadastro/cadastro';
 import Roupas from '../../models/roupas';
 import Roupa from '../../models/roupa';
 import { PuffLoader } from 'react-spinners';
+import { ImSearch } from 'react-icons/im';
 
 
 
@@ -22,6 +23,7 @@ function CatalogSkins() {
   const [tipoPopUp, setTipoPopUp] = useState(null);
   const [on, setOn] = useState(true);
   const [edited, setEdited] = useState(null);
+  const [busca, setBusca] = useState(null);
 
   // Adicionar Skin
   const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada, imagem,) => {
@@ -72,6 +74,9 @@ function CatalogSkins() {
     setListaSkin(null);
   }
 
+
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -103,12 +108,33 @@ function CatalogSkins() {
         });
         setListaFinal(listaRoupas.getRoupas());
         console.log(listaRoupas.roupas);
+
+
       }
     }
   }, [apiData]);
+  console.log(busca);
+  useEffect(() => {
+    if (busca) {
+      const filtro = listaRoupas.roupas.filter((roupa) => {
+        return roupa.nome.toLowerCase().includes(busca.toLowerCase());
+      });
+      setListaFinal(filtro);
+    } else {
+      setListaFinal(listaRoupas.roupas);
+    }
+  }, [busca]);
+
+
   return (
     <div className={styles.main}>
       <Header />
+        <input type="text"
+          onChange={(e) => { setBusca(e.target.value) }}
+          value={busca}
+          className={styles.inputSearch}
+          placeholder="🔍Pesquisar o nome da skin"
+        />
 
       {
         on == true ? (
