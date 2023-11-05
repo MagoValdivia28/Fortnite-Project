@@ -146,7 +146,7 @@ function CatalogSkins() {
       }
       {
         exibirPopUp && <div className={styles.cardCreator}>
-          <PopUpCadastro novosCadastros={handleCadastro} editCadastro={handleCadastroEdit} lista={listaFinal} handleEdit={edited} />
+          <PopUpCadastro novosCadastros={handleCadastro} editCadastro={handleCadastroEdit} lista={listaRoupas.roupas} handleEdit={edited} />
           <button className={styles.bntExit} onClick={() => exit()}>X</button>
 
         </div>
