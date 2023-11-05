@@ -92,6 +92,7 @@
     padding: 0.5rem;
     border: none;
     margin-bottom: 1rem;
+    width: 100%;
 }
 .cardSearch {
     display: flex;
