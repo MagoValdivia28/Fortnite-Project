@@ -10,6 +10,7 @@ const PopUpCadastro = ({ novosCadastros, editCadastro, lista, handleEdit }) => {
     const [capitulo, setCapitulo] = useState('Capitulo1');
     const [temporada, setTemporada] = useState('temporada1');
     const [raridade, setRaridade] = useState([]);
+    const [imagem, setImagem] = useState(null);
 
     const formattedData = (date) => {
         const format = date.slice(0, 10);
@@ -29,7 +30,7 @@ const PopUpCadastro = ({ novosCadastros, editCadastro, lista, handleEdit }) => {
     }
 
     const editSkin = () => {
-        editCadastro(nome, descricao, rarity, data, capitulo, temporada, 'https://fortniteskins.net/wp-content/cache/thumb/dc/2ff2ec28cec1cdc_190x190.webp', handleEdit.id);
+        editCadastro(nome, descricao, rarity, data, capitulo, temporada, imagem, handleEdit.id);
         // clear fields
         setNome('');
         setDescricao('');
@@ -52,6 +53,7 @@ const PopUpCadastro = ({ novosCadastros, editCadastro, lista, handleEdit }) => {
             setData(formattedData(handleEdit.dataLancamento));
             setCapitulo(handleEdit.capitulo);
             setTemporada(handleEdit.temporada);
+            setImagem(handleEdit.imagem)
         }
     }, [handleEdit]);
 
