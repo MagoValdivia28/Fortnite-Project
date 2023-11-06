@@ -2,6 +2,27 @@
 
 Este código é uma aplicação web desenvolvida em [React](https://react.dev) que permite aos usuários visualizarem e cadastrar skins do jogo [Fortnite](https://www.fortnite.com/?lang=pt-BR). A aplicação possui funcionalidades para buscar skins por nome e raridade, além de permitir a criação e edição de skins personalizadas.
 
+Mas primeiro, para que este código funcione sem erros, você deverá usar os seguintes comandos no seu terminal:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Além disso, você deverá usar esses comandos de bibliotecas de ícones para que o código seja executado sem nenhum problema.
+``` bash 
+npm install react-icons --save
+```
+
+``` bash 
+npm install react-spinners --save
+```
+
 ## Componentes Principais
 
 1. Header e Footer:
@@ -145,3 +166,5 @@ Estilos CSS são aplicados usando classes para controlar a aparência dos elemen
 
 ## Considerações Finais:
 Este código React fornece uma interface interativa para visualizar, cadastrar, editar e remover skins do Fortnite. Ele utiliza uma [API de skins do Fortnite](https://fortnite-api.com) para carregar dados iniciais e oferece uma funcionalidade de pesquisa para facilitar a navegação pelos diferentes skins disponíveis. O pop-up de cadastro/edição permite aos usuários personalizar skins com detalhes específicos antes de adicioná-las à lista principal. Alem disso o usa da classe Roupas fornece uma estrutura organizada para gerenciar uma lista de skins do Fortnite no contexto da aplicação React. Ela encapsula as operações relacionadas a skins, como adição, remoção e edição, facilitando a manipulação eficiente dos dados dentro da aplicação.
+
+Créditos para a importação dos ícones dos sites [React Icons](https://react-icons.github.io/react-icons/) e [REACT SPINNERS by David Hu](https://www.davidhu.io/react-spinners/), respectivamente."
