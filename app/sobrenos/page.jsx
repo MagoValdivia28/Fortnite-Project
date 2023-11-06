@@ -24,7 +24,7 @@ const Sobrenos = () => (
                 </div>
                 <div className={styles.container2}>
                     <Pessoa imagem={"/pravel.jpeg"} nome={"Matheus Gomes"} cargo={"Dev"} descricao={"2000 Vbucks"} />
-                    <Pessoa imagem={"/matheus coco.webp"} nome={"Matheus Côcco"} cargo={"Dev"} descricao={"2000 Vbucks"} />
+                    <Pessoa imagem={"/fervas.jpeg"} nome={"Matheus Côcco"} cargo={"Dev"} descricao={"2000 Vbucks"} />
                     <Pessoa imagem={"/thayna.png"} nome={"Thayna Vazzoler"} cargo={"Dev"} descricao={"2000 Vbucks"} />
                 </div>
             </div>
