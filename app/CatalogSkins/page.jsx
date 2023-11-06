@@ -151,6 +151,7 @@ function CatalogSkins() {
         placeholder="🔍Pesquisar o nome da skin"
       />
       <select name="raridades" value={search} onChange={(e) => setSearch(e.target.value)} >
+        <option value="">Todas as raridades</option>
         {
           rarity.map((raridade) => (
             <option value={raridade}>{raridade}</option>
