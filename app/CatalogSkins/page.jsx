@@ -126,18 +126,16 @@ function CatalogSkins() {
         return roupa.nome.toLowerCase().includes(busca.toLowerCase());
       });
       setListaFinal(filtro);
-    }
-  }, [busca]);
-
-
-  useEffect(() => {
-    if (search) {
+    } else if (search) {
       const filtro = listaRoupas.roupas.filter((roupa) => {
         return roupa.raridade.toLowerCase().includes(search.toLowerCase());
       });
       setListaFinal(filtro);
     }
-  }, [search]);
+     else {
+      setListaFinal(listaRoupas.roupas);
+    }
+  }, [busca, search]);
 
 
   return (
