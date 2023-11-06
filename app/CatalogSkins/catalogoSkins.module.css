@@ -83,16 +83,20 @@
     margin: auto;
     margin-top: 30.4vh;
     margin-bottom: 30.3vh;
-    ;
+}
+
+.filtros {
+    display: flex;
+    color:white;
 }
 
 .inputSearch {
     background-color: #080859;
-    color: #102d81;
     padding: 0.5rem;
     border: none;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 80%;
+    color: #ecfdff;
 }
 .cardSearch {
     display: flex;
@@ -100,4 +104,13 @@
     background: -webkit-linear-gradient(left, rgb(65, 167, 235) 0%, #3e6ac9 100%);
     gap: 10px;
     margin-top: 2rem;
+}
+
+.selectRaridade {
+    width: 20%;
+    background-color: #080859;
+    padding: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    color: #ecfdff;
 }

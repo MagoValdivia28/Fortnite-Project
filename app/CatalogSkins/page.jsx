@@ -119,46 +119,46 @@ function CatalogSkins() {
   }, [apiData]);
   console.log(busca);
 
-  
+
   useEffect(() => {
     if (busca) {
       const filtro = listaRoupas.roupas.filter((roupa) => {
         return roupa.nome.toLowerCase().includes(busca.toLowerCase());
       });
       setListaFinal(filtro);
-    } else if (search) {
+    }
+  }, [busca]);
+
+
+  useEffect(() => {
+    if (search) {
       const filtro = listaRoupas.roupas.filter((roupa) => {
         return roupa.raridade.toLowerCase().includes(search.toLowerCase());
       });
       setListaFinal(filtro);
     }
-     else {
-      setListaFinal(listaRoupas.roupas);
-    }
-  }, [busca, search]);
-
-
-
+  }, [search]);
 
 
   return (
     <div className={styles.main}>
       <Header />
-      <input type="text"
-        onChange={(e) => { setBusca(e.target.value) }}
-        value={busca}
-        className={styles.inputSearch}
-        placeholder="🔍Pesquisar o nome da skin"
-      />
-      <select name="raridades" value={search} onChange={(e) => setSearch(e.target.value)} >
-        <option value="">Todas as raridades</option>
-        {
-          rarity.map((raridade) => (
-            <option value={raridade}>{raridade}</option>
-          ))
-        }
-      </select>
-
+      <div className={styles.filtros}>
+        <input type="text"
+          onChange={(e) => { setBusca(e.target.value) }}
+          value={busca}
+          className={styles.inputSearch}
+          placeholder="🔍Pesquisar o nome da skin"
+        />
+        <select className={styles.selectRaridade} name="raridades" value={search} onChange={(e) => setSearch(e.target.value)} >
+          <option value="">Todas as raridades</option>
+          {
+            rarity.map((raridade) => (
+              <option value={raridade}>{raridade}</option>
+            ))
+          }
+        </select>
+      </div>
       {
         on == true ? (
 
