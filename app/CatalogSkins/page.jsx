@@ -24,6 +24,8 @@ function CatalogSkins() {
   const [on, setOn] = useState(true);
   const [edited, setEdited] = useState(null);
   const [busca, setBusca] = useState(null);
+  const [rarity, setRarity] = useState([]);
+  const [search, setSearch] = useState(null);
 
   // Adicionar Skin
   const handleCadastro = (nome, descricao, rarity, data, capitulo, temporada, imagem,) => {
@@ -74,7 +76,7 @@ function CatalogSkins() {
     setListaSkin(null);
   }
 
-
+  console.log(apiData);
 
 
   useEffect(() => {
@@ -82,12 +84,16 @@ function CatalogSkins() {
       try {
         const data = await skins();
         setApiData(data);
+        const raridadeFilter = data.filter((skin, index) => data.findIndex((skinUnica) => skinUnica.rarity.value == skin.rarity.value) == index);
+        setRarity(raridadeFilter.map((skin) => skin.rarity.value));
       } catch (error) {
         throw error;
       }
     }
     fetchData();
   }, []);
+
+  console.log(rarity);
 
   useEffect(() => {
     console.log(listaRoupas.roupas);
@@ -108,8 +114,6 @@ function CatalogSkins() {
         });
         setListaFinal(listaRoupas.getRoupas());
         console.log(listaRoupas.roupas);
-
-
       }
     }
   }, [apiData]);
@@ -125,16 +129,34 @@ function CatalogSkins() {
     }
   }, [busca]);
 
+  useEffect(() => {
+    if (search) {
+      const filtro = listaRoupas.roupas.filter((roupa) => {
+        return roupa.raridade.toLowerCase().includes(search.toLowerCase());
+      });
+      setListaFinal(filtro);
+    } else {
+      setListaFinal(listaRoupas.roupas);
+    }
+  }, [search]);
+
 
   return (
     <div className={styles.main}>
       <Header />
-        <input type="text"
-          onChange={(e) => { setBusca(e.target.value) }}
-          value={busca}
-          className={styles.inputSearch}
-          placeholder="🔍Pesquisar o nome da skin"
-        />
+      <input type="text"
+        onChange={(e) => { setBusca(e.target.value) }}
+        value={busca}
+        className={styles.inputSearch}
+        placeholder="🔍Pesquisar o nome da skin"
+      />
+      <select name="raridades" value={search} onChange={(e) => setSearch(e.target.value)} >
+        {
+          rarity.map((raridade) => (
+            <option value={raridade}>{raridade}</option>
+          ))
+        }
+      </select>
 
       {
         on == true ? (
