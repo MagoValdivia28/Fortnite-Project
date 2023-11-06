@@ -118,27 +118,27 @@ function CatalogSkins() {
     }
   }, [apiData]);
   console.log(busca);
+
+  
   useEffect(() => {
     if (busca) {
       const filtro = listaRoupas.roupas.filter((roupa) => {
         return roupa.nome.toLowerCase().includes(busca.toLowerCase());
       });
       setListaFinal(filtro);
-    } else {
-      setListaFinal(listaRoupas.roupas);
-    }
-  }, [busca]);
-
-  useEffect(() => {
-    if (search) {
+    } else if (search) {
       const filtro = listaRoupas.roupas.filter((roupa) => {
         return roupa.raridade.toLowerCase().includes(search.toLowerCase());
       });
       setListaFinal(filtro);
-    } else {
+    }
+     else {
       setListaFinal(listaRoupas.roupas);
     }
-  }, [search]);
+  }, [busca, search]);
+
+
+
 
 
   return (
